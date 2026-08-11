@@ -1,12 +1,20 @@
 (function() {
   const INITIAL_DATA = {
-  "updatedAt": "2026-08-11T22:17:02.587Z",
+  "updatedAt": "2026-08-11T22:42:02.458Z",
   "systems": [
     {
       "id": "editorial-style",
       "name": "Editorial Style",
       "slug": "editorial-style",
       "description": "定制设计系统",
+      "genre": {
+        "type": "editorial-stage",
+        "name": "Editorial & Stage Spec",
+        "label": "电子杂志 & 舞台构图",
+        "warning": "⚠️ 构图提示: 此系统包含强烈的杂志构图语法与舞台版式范式（如不对称分栏、大字号/页码、图注井）。请在 Slide/封面/汇报中保留其戏剧情感，切勿降级为三等分通用 SaaS 卡片！",
+        "suitableFor": "PPT/Slide, 杂志封面, 汇报大图, 特色页面",
+        "unsuitableFor": "长篇产品说明书, 密集后台数据列表"
+      },
       "tags": [
         "Minimalist",
         "Dark Mode",
@@ -31,6 +39,14 @@
       "name": "新品推广数据工作台",
       "slug": "product-analytics-dashboard",
       "description": "状态：第二轮前端设计工艺与经营总览指标联动已实现并锁定视觉基线 日期：2026-07-24 视觉依据：`设计参考/IMG_8540.JPG` 至 `设计参考/IMG_8545.JPG`",
+      "genre": {
+        "type": "product-dashboard",
+        "name": "Product & Dashboard Spec",
+        "label": "产品 & 精密数据工作台",
+        "warning": "💡 构图提示: 适用于高信息密度的 SaaS 工作台与数据分析仪表盘。注重 1px 网格、侧边栏上下文与清晰的数据面板。",
+        "suitableFor": "SaaS 后台, 数据仪表盘, 知识库系统",
+        "unsuitableFor": "大图沉浸式杂志封面"
+      },
       "tags": [
         "Bento"
       ],
@@ -53,6 +69,14 @@
       "name": "Pop Art Style",
       "slug": "pop-art-style",
       "description": "定制设计系统",
+      "genre": {
+        "type": "editorial-stage",
+        "name": "Editorial & Stage Spec",
+        "label": "电子杂志 & 舞台构图",
+        "warning": "⚠️ 构图提示: 此系统包含强烈的杂志构图语法与舞台版式范式（如不对称分栏、大字号/页码、图注井）。请在 Slide/封面/汇报中保留其戏剧情感，切勿降级为三等分通用 SaaS 卡片！",
+        "suitableFor": "PPT/Slide, 杂志封面, 汇报大图, 特色页面",
+        "unsuitableFor": "长篇产品说明书, 密集后台数据列表"
+      },
       "tags": [
         "Editorial",
         "Bento"
@@ -75,6 +99,14 @@
       "name": "Art Deco Style",
       "slug": "art-deco-style",
       "description": "定制设计系统",
+      "genre": {
+        "type": "editorial-stage",
+        "name": "Editorial & Stage Spec",
+        "label": "电子杂志 & 舞台构图",
+        "warning": "⚠️ 构图提示: 此系统包含强烈的杂志构图语法与舞台版式范式（如不对称分栏、大字号/页码、图注井）。请在 Slide/封面/汇报中保留其戏剧情感，切勿降级为三等分通用 SaaS 卡片！",
+        "suitableFor": "PPT/Slide, 杂志封面, 汇报大图, 特色页面",
+        "unsuitableFor": "长篇产品说明书, 密集后台数据列表"
+      },
       "tags": [
         "Dark Mode",
         "Editorial",
@@ -97,6 +129,14 @@
       "name": "Brutalism Style",
       "slug": "brutalism-style",
       "description": "定制设计系统",
+      "genre": {
+        "type": "editorial-stage",
+        "name": "Editorial & Stage Spec",
+        "label": "电子杂志 & 舞台构图",
+        "warning": "⚠️ 构图提示: 此系统包含强烈的杂志构图语法与舞台版式范式（如不对称分栏、大字号/页码、图注井）。请在 Slide/封面/汇报中保留其戏剧情感，切勿降级为三等分通用 SaaS 卡片！",
+        "suitableFor": "PPT/Slide, 杂志封面, 汇报大图, 特色页面",
+        "unsuitableFor": "长篇产品说明书, 密集后台数据列表"
+      },
       "tags": [
         "Glassmorphism",
         "Editorial",
@@ -120,6 +160,14 @@
       "name": "Memphis Style",
       "slug": "memphis-style",
       "description": "定制设计系统",
+      "genre": {
+        "type": "editorial-stage",
+        "name": "Editorial & Stage Spec",
+        "label": "电子杂志 & 舞台构图",
+        "warning": "⚠️ 构图提示: 此系统包含强烈的杂志构图语法与舞台版式范式（如不对称分栏、大字号/页码、图注井）。请在 Slide/封面/汇报中保留其戏剧情感，切勿降级为三等分通用 SaaS 卡片！",
+        "suitableFor": "PPT/Slide, 杂志封面, 汇报大图, 特色页面",
+        "unsuitableFor": "长篇产品说明书, 密集后台数据列表"
+      },
       "tags": [
         "Bento"
       ],
@@ -141,6 +189,14 @@
       "name": "Y2K Cyber Style",
       "slug": "y2k-cyber-style",
       "description": "定制设计系统",
+      "genre": {
+        "type": "editorial-stage",
+        "name": "Editorial & Stage Spec",
+        "label": "电子杂志 & 舞台构图",
+        "warning": "⚠️ 构图提示: 此系统包含强烈的杂志构图语法与舞台版式范式（如不对称分栏、大字号/页码、图注井）。请在 Slide/封面/汇报中保留其戏剧情感，切勿降级为三等分通用 SaaS 卡片！",
+        "suitableFor": "PPT/Slide, 杂志封面, 汇报大图, 特色页面",
+        "unsuitableFor": "长篇产品说明书, 密集后台数据列表"
+      },
       "tags": [
         "Minimalist",
         "Dark Mode",
@@ -165,6 +221,14 @@
       "name": "Bauhaus Style",
       "slug": "bauhaus-style",
       "description": "定制设计系统",
+      "genre": {
+        "type": "editorial-stage",
+        "name": "Editorial & Stage Spec",
+        "label": "电子杂志 & 舞台构图",
+        "warning": "⚠️ 构图提示: 此系统包含强烈的杂志构图语法与舞台版式范式（如不对称分栏、大字号/页码、图注井）。请在 Slide/封面/汇报中保留其戏剧情感，切勿降级为三等分通用 SaaS 卡片！",
+        "suitableFor": "PPT/Slide, 杂志封面, 汇报大图, 特色页面",
+        "unsuitableFor": "长篇产品说明书, 密集后台数据列表"
+      },
       "tags": [
         "Glassmorphism",
         "Editorial",
@@ -188,6 +252,14 @@
       "name": "Marc Jacobs Report",
       "slug": "marc-jacobs-report",
       "description": "> 给所有做分册 HTML 的 worker（codex/opencode）：**严格照此执行**。目标是五份分册视觉零偏差，最终可无缝合订。 > 母版基准：`10_品牌价值与人群.html`（甲方已认可）。共享样式：`report.css`。 ---",
+      "genre": {
+        "type": "editorial-stage",
+        "name": "Editorial & Stage Spec",
+        "label": "电子杂志 & 舞台构图",
+        "warning": "⚠️ 构图提示: 此系统包含强烈的杂志构图语法与舞台版式范式（如不对称分栏、大字号/页码、图注井）。请在 Slide/封面/汇报中保留其戏剧情感，切勿降级为三等分通用 SaaS 卡片！",
+        "suitableFor": "PPT/Slide, 杂志封面, 汇报大图, 特色页面",
+        "unsuitableFor": "长篇产品说明书, 密集后台数据列表"
+      },
       "tags": [
         "Minimalist",
         "Dark Mode",
@@ -213,6 +285,14 @@
       "name": "Lovable System",
       "slug": "lovable-system",
       "description": "## 1. Visual Theme & Atmosphere Lovable's website radiates warmth through restraint. The entire page sits on a creamy, parchment-toned background (`#f",
+      "genre": {
+        "type": "editorial-stage",
+        "name": "Editorial & Stage Spec",
+        "label": "电子杂志 & 舞台构图",
+        "warning": "⚠️ 构图提示: 此系统包含强烈的杂志构图语法与舞台版式范式（如不对称分栏、大字号/页码、图注井）。请在 Slide/封面/汇报中保留其戏剧情感，切勿降级为三等分通用 SaaS 卡片！",
+        "suitableFor": "PPT/Slide, 杂志封面, 汇报大图, 特色页面",
+        "unsuitableFor": "长篇产品说明书, 密集后台数据列表"
+      },
       "tags": [
         "Minimalist",
         "Dark Mode",
@@ -238,6 +318,14 @@
       "name": "Fashion Monitor",
       "slug": "fashion-monitor",
       "description": "定制设计系统",
+      "genre": {
+        "type": "editorial-stage",
+        "name": "Editorial & Stage Spec",
+        "label": "电子杂志 & 舞台构图",
+        "warning": "⚠️ 构图提示: 此系统包含强烈的杂志构图语法与舞台版式范式（如不对称分栏、大字号/页码、图注井）。请在 Slide/封面/汇报中保留其戏剧情感，切勿降级为三等分通用 SaaS 卡片！",
+        "suitableFor": "PPT/Slide, 杂志封面, 汇报大图, 特色页面",
+        "unsuitableFor": "长篇产品说明书, 密集后台数据列表"
+      },
       "tags": [
         "Dark Mode",
         "Glassmorphism",
@@ -263,6 +351,14 @@
       "name": "Swiss Research System",
       "slug": "swiss-research-system",
       "description": "- **黑白优先**:90% 内容用纯黑/白/灰,1 个强调色(蜜黄)承担全部视觉重量 - **栅格至死**:所有元素对齐到 8/12/24/48 px 网格,绝不\"差不多对齐\" - **数字说话**:所有可量化信息带编号,序号零填充(`01` `02` `13`) - **克制字体**:仅用 1 ",
+      "genre": {
+        "type": "product-dashboard",
+        "name": "Product & Dashboard Spec",
+        "label": "产品 & 精密数据工作台",
+        "warning": "💡 构图提示: 适用于高信息密度的 SaaS 工作台与数据分析仪表盘。注重 1px 网格、侧边栏上下文与清晰的数据面板。",
+        "suitableFor": "SaaS 后台, 数据仪表盘, 知识库系统",
+        "unsuitableFor": "大图沉浸式杂志封面"
+      },
       "tags": [
         "Minimalist",
         "Glassmorphism",
@@ -310,6 +406,14 @@
       "name": "Swiss Minimalism",
       "slug": "swiss-minimalism",
       "description": "Swiss Minimalism emphasizes clarity, order, and precise typography. Neutral base with high-contrast accent colors, strict grid structure, generous whi",
+      "genre": {
+        "type": "universal-system",
+        "name": "Universal Design System",
+        "label": "通用 UI 视觉规范",
+        "warning": "💡 构图提示: 通用 UI 设计规范。严格遵循其 Color Tokens、字号阶梯、边框质感与 Hover 状态。",
+        "suitableFor": "通用 Web 应用, 落地页, 移动端 UI",
+        "unsuitableFor": "无限制"
+      },
       "tags": [
         "Minimalist",
         "Editorial",
@@ -335,6 +439,7 @@
 
   // State Filters
   let currentNavFilter = 'all'; // 'all' | 'favorites'
+  let currentGenreFilter = 'all'; // 'all' | 'editorial-stage' | 'product-dashboard' | 'universal-system'
   let currentTag = null;
   let searchQuery = '';
 
@@ -401,15 +506,21 @@
     let filtered = allSystems.filter(s => {
       // 1. Nav filter
       if (currentNavFilter === 'favorites' && !isFavorite(s.id)) return false;
-      // 2. Tag filter
+      // 2. Genre filter
+      if (currentGenreFilter !== 'all') {
+        const itemGenreType = (s.genre && s.genre.type) || 'universal-system';
+        if (itemGenreType !== currentGenreFilter) return false;
+      }
+      // 3. Tag filter
       if (currentTag && !(s.tags || []).includes(currentTag)) return false;
-      // 3. Search query
+      // 4. Search query
       if (searchQuery) {
         const q = searchQuery.toLowerCase();
         const matchName = s.name.toLowerCase().includes(q);
         const matchDesc = (s.description || '').toLowerCase().includes(q);
+        const matchGenre = (s.genre && s.genre.label || '').toLowerCase().includes(q);
         const matchTags = (s.tags || []).some(t => t.toLowerCase().includes(q));
-        if (!matchName && !matchDesc && !matchTags) return false;
+        if (!matchName && !matchDesc && !matchGenre && !matchTags) return false;
       }
       return true;
     });
@@ -489,7 +600,7 @@
       grid.innerHTML = `
         <div style="grid-column: 1/-1; padding: 60px 20px; text-align: center; border: 1px dashed var(--line);">
           <div style="font-size:24px; font-weight:900; margin-bottom:8px;">未找到匹配的设计系统</div>
-          <div style="font-size:13px; color:var(--muted);">可以尝试调整搜索条件或清除右侧标签筛选</div>
+          <div style="font-size:13px; color:var(--muted);">可以尝试调整搜索条件或清除侧边栏筛选</div>
         </div>
       `;
       return;
@@ -499,6 +610,7 @@
       const numStr = String(idx + 1).padStart(2, '0');
       const favClass = isFavorite(item.id) ? 'is-fav' : '';
       const favText = isFavorite(item.id) ? '★' : '☆';
+      const genreLabel = (item.genre && item.genre.label) ? item.genre.label : '通用 UI 规范';
 
       const paletteMarkup = (item.palette || []).map(c =>
         `<div class="palette-swatch" style="background:${c};" title="${c}"></div>`
@@ -518,6 +630,10 @@
               </button>
             </div>
 
+            <div>
+              <span class="card-genre-badge">${escapeHtml(genreLabel)}</span>
+            </div>
+
             <h3 class="card-title">${escapeHtml(item.name)}</h3>
             <p class="card-desc">${escapeHtml(item.description || '暂无详细描述')}</p>
             <div class="card-tags">${tagsMarkup}</div>
@@ -527,7 +643,7 @@
             <div class="palette-strip">${paletteMarkup}</div>
 
             <div class="card-actions">
-              <button class="btn-swiss" onclick="copyAgentPrompt('${escapeHtml(item.designMdPath)}')">
+              <button class="btn-swiss" onclick="copyAgentPromptById('${item.id}')">
                 复制引用
               </button>
 
@@ -536,7 +652,7 @@
               </button>
 
               <a class="btn-swiss btn-primary" href="${item.previewHtmlPath}" target="_blank" style="grid-column: 1 / -1;">
-                打开全屏 Showcase 预览 →
+                打开 Showcase 预览 →
               </a>
             </div>
           </div>
@@ -550,7 +666,7 @@
     const subtext = document.getElementById('viewSubtext');
     const resetBtn = document.getElementById('resetFilterBtn');
 
-    const isFiltered = (currentNavFilter !== 'all') || currentTag || searchQuery;
+    const isFiltered = (currentNavFilter !== 'all') || (currentGenreFilter !== 'all') || currentTag || searchQuery;
 
     if (resetBtn) {
       resetBtn.style.display = isFiltered ? 'inline-block' : 'none';
@@ -558,6 +674,14 @@
 
     let titleText = "全部设计系统";
     if (currentNavFilter === 'favorites') titleText = "我的收藏 FAVORITES";
+    if (currentGenreFilter !== 'all') {
+      const genreNames = {
+        'editorial-stage': '电子杂志 & 舞台',
+        'product-dashboard': '产品 & 数据工作台',
+        'universal-system': '通用 UI 规范'
+      };
+      titleText += ` · 范式 [${genreNames[currentGenreFilter] || currentGenreFilter}]`;
+    }
     if (currentTag) titleText += ` · 标签 [${currentTag}]`;
     if (searchQuery) titleText += ` · 搜索 "${searchQuery}"`;
 
@@ -577,6 +701,17 @@
       });
     });
 
+    // Genre filter switching
+    const genreItems = document.querySelectorAll('.genre-item');
+    genreItems.forEach(item => {
+      item.addEventListener('click', () => {
+        genreItems.forEach(i => i.classList.remove('active'));
+        item.classList.add('active');
+        currentGenreFilter = item.getAttribute('data-genre');
+        renderAll();
+      });
+    });
+
     // Search input
     const searchInput = document.getElementById('searchInput');
     if (searchInput) {
@@ -591,11 +726,17 @@
     if (resetBtn) {
       resetBtn.addEventListener('click', () => {
         currentNavFilter = 'all';
+        currentGenreFilter = 'all';
         currentTag = null;
         searchQuery = '';
         if (searchInput) searchInput.value = '';
+        
         navItems.forEach(i => {
           if (i.getAttribute('data-filter') === 'all') i.classList.add('active');
+          else i.classList.remove('active');
+        });
+        genreItems.forEach(i => {
+          if (i.getAttribute('data-genre') === 'all') i.classList.add('active');
           else i.classList.remove('active');
         });
         renderAll();
@@ -613,12 +754,19 @@
     }
   }
 
-  window.copyAgentPrompt = function(path) {
-    const promptText = `Please reference and strictly implement the design system defined at: ${path}`;
+  window.copyAgentPromptById = function(id) {
+    const item = (galleryData.systems || []).find(s => s.id === id);
+    if (!item) return;
+
+    let promptText = `Please reference and strictly implement the design system defined at: ${item.designMdPath}`;
+    if (item.genre && item.genre.warning) {
+      promptText += `\n\n[Layout & Framing Guidance]:\n${item.genre.warning}\n推荐适用场景: ${item.genre.suitableFor}`;
+    }
+
     navigator.clipboard.writeText(promptText).then(() => {
-      showToast("已复制 Agent 引用指令与路径！");
+      showToast("已复制 Agent 引用指令与范式避坑说明！");
     }).catch(() => {
-      prompt("请手动复制引用指令与路径：", promptText);
+      prompt("请手动复制引用指令与范式：", promptText);
     });
   };
 

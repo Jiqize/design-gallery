@@ -34,7 +34,7 @@
     header.hero {
       position: relative;
       padding-top: 40px;
-      margin-bottom: 48px;
+      margin-bottom: 32px;
       border-bottom: 2px solid var(--line);
       display: flex;
       gap: 40px;
@@ -68,7 +68,30 @@
       line-height: 1.05; margin-bottom: 16px; color: var(--text);
     }
     h1 .b { background: var(--accent); color: var(--accent-text); padding: 0 12px; display: inline-block; }
-    .desc { font-size: 16px; color: var(--muted); max-width: 720px; margin-bottom: 32px; }
+    .desc { font-size: 16px; color: var(--muted); max-width: 720px; margin-bottom: 24px; }
+
+    /* Genre Advisory Banner */
+    .genre-banner {
+      border: 2px solid var(--line);
+      background: var(--surface);
+      padding: 16px 20px;
+      margin-bottom: 32px;
+      display: flex;
+      gap: 16px;
+      align-items: flex-start;
+    }
+    .genre-tag-badge {
+      font-size: 11px;
+      font-weight: 800;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      background: var(--accent);
+      color: var(--accent-text);
+      padding: 4px 8px;
+      flex-shrink: 0;
+    }
+    .genre-info-body { flex: 1; font-size: 13px; color: var(--text); }
+    .genre-info-body strong { display: block; font-size: 14px; font-weight: 800; margin-bottom: 4px; }
 
     .agent-prompt-bar {
       background: var(--surface);
@@ -230,12 +253,24 @@
       </div>
     </header>
 
+    <!-- Genre Advisory Banner -->
+    <div class="genre-banner">
+      <span class="genre-tag-badge">产品 &amp; 精密数据工作台</span>
+      <div class="genre-info-body">
+        <strong>Product &amp; Dashboard Spec — 适用场景与构图指导</strong>
+        💡 构图提示: 适用于高信息密度的 SaaS 工作台与数据分析仪表盘。注重 1px 网格、侧边栏上下文与清晰的数据面板。<br>
+        <span style="font-size:11px; opacity:0.8; margin-top:4px; display:block;">
+          推荐场景: <code>SaaS 后台, 数据仪表盘, 知识库系统</code>
+        </span>
+      </div>
+    </div>
+
     <!-- Agent Quick Command Bar -->
     <div class="agent-prompt-bar">
       <div class="agent-prompt-text">
-        Please reference and strictly implement the design system defined at: /Users/lianglei/Projects/code/design-gallery/systems/product-analytics-dashboard/DESIGN.md
+        Please reference the design system at: /Users/lianglei/Projects/code/design-gallery/systems/product-analytics-dashboard/DESIGN.md (💡 构图提示: 适用于高信息密度的 SaaS 工作台与数据分析仪表盘。注重 1px 网格、侧边栏上下文与清晰的数据面板。)
       </div>
-      <button class="btn-copy" onclick="copyPrompt()">复制 AGENT 路径</button>
+      <button class="btn-copy" onclick="copyPrompt()">复制 AGENT 指令与范式</button>
     </div>
 
     <!-- Section 1: Color Palette -->
@@ -375,7 +410,7 @@
       <!-- Code & Markdown Spec -->
       <div class="card-panel">
         <h3>Typography & Code</h3>
-        <p style="font-size:13px; margin-bottom:12px;">Monospace code block styling for token specifications.</p>
+        <p style="font-size:13px; opacity:0.8; margin-bottom:12px;">Monospace code block styling for token specifications.</p>
 
         <pre style="background:var(--bg); color:var(--text); border:1px solid var(--line); padding:14px; font-family:var(--font-mono); font-size:12px; overflow-x:auto;">
 :root {
@@ -424,9 +459,9 @@
 
   <script>
     function copyPrompt() {
-      const text = "Please reference and strictly implement the design system defined at: /Users/lianglei/Projects/code/design-gallery/systems/product-analytics-dashboard/DESIGN.md";
+      const text = "Please reference the design system defined at: /Users/lianglei/Projects/code/design-gallery/systems/product-analytics-dashboard/DESIGN.md\n[Layout Guidance]: 💡 构图提示: 适用于高信息密度的 SaaS 工作台与数据分析仪表盘。注重 1px 网格、侧边栏上下文与清晰的数据面板。";
       navigator.clipboard.writeText(text).then(() => {
-        alert("已复制 Agent 引用绝对路径与指令！");
+        alert("已复制 Agent 引用指令与范式避坑说明！");
       }).catch(() => {
         prompt("手动复制 Agent 引用指令：", text);
       });
