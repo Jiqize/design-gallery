@@ -1,18 +1,18 @@
 (function() {
   const INITIAL_DATA = {
-  "updatedAt": "2026-08-11T22:47:50.358Z",
+  "updatedAt": "2026-08-11T22:50:30.550Z",
   "systems": [
     {
-      "id": "elle-27-dress-recap",
-      "name": "ELLE 27春连衣裙复盘设计系统",
-      "slug": "elle-27-dress-recap",
+      "id": "elle-recap-system",
+      "name": "ELLE复盘设计系统",
+      "slug": "elle-recap-system",
       "description": "> 这是一份**可复用的设计规范**。任何 agent 在生成中文数据复盘报告(单文件 HTML) > 都可以引用本文档落地视觉风格,而不必从零重新设计。 > 当前主范例:`length-analysis.html`(26 春连衣裙 · 衣长维度分析)。 ---",
       "genre": {
         "type": "editorial-stage",
         "name": "Editorial & Stage Spec",
         "label": "电子杂志 & 舞台构图",
-        "warning": "⚠️ 构图提示: 此系统包含强烈的杂志构图语法与舞台版式范式（如不对称分栏、大字号/页码、图注井）。请在 Slide/封面/汇报中保留其戏剧情感，切勿降级为三等分通用 SaaS 卡片！",
-        "suitableFor": "PPT/Slide, 杂志封面, 汇报大图, 特色页面",
+        "warning": "⚠️ 构图提示: 此系统包含强烈的杂志构图语法与舞台版式范式（如大号衬线标题 Color.、不对称分栏、图注井）。请在 Slide/封面/汇报中保留其优雅排版与红线点睛，切勿降级为三等分通用 SaaS 卡片！",
+        "suitableFor": "PPT/Slide, 杂志封面, 汇报大图, 品牌月报",
         "unsuitableFor": "长篇产品说明书, 密集后台数据列表"
       },
       "tags": [
@@ -30,8 +30,8 @@
         "#9E9E9E",
         "#FFFFFF"
       ],
-      "designMdPath": "/Users/lianglei/Projects/code/design-gallery/systems/elle-27-dress-recap/DESIGN.md",
-      "previewHtmlPath": "systems/elle-27-dress-recap/preview.html",
+      "designMdPath": "/Users/lianglei/Projects/code/design-gallery/systems/elle-recap-system/DESIGN.md",
+      "previewHtmlPath": "systems/elle-recap-system/preview.html",
       "createdAt": "2026-08-11"
     },
     {

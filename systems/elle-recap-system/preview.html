@@ -3,19 +3,19 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>ELLE 27春连衣裙复盘设计系统 — Interactive Style Specimen</title>
+  <title>ELLE复盘设计系统 — Interactive Style Specimen</title>
   <style>
     :root {
-      --bg: #C8102E;
-      --surface: #8B0A1F;
-      --text: #FAFAFA;
-      --muted: rgba(250, 250, 250, 0.65);
-      --accent: #6B6B6B;
+      --bg: #FCE7EA;
+      --surface: #FFFFFF;
+      --text: #111111;
+      --muted: #666666;
+      --accent: #C8102E;
       --accent-text: #FFFFFF;
-      --line: rgba(255, 255, 255, 0.25);
-      --line-subtle: rgba(255, 255, 255, 0.12);
-      --card-bg: #18181C;
-      --card-text: #FAFAFA;
+      --line: #000000;
+      --line-subtle: #E5E5E5;
+      --card-bg: #FFFFFF;
+      --card-text: #111111;
       --font-sans: "Helvetica Neue", -apple-system, "PingFang SC", sans-serif;
       --font-mono: "Menlo", "SF Mono", "Courier New", monospace;
     }
@@ -248,7 +248,7 @@
       </div>
       <div class="hero-main">
         <span class="pre-badge">Interactive Component Specimen</span>
-        <h1>ELLE 27春连衣裙复盘设计系统 <span class="b">SHOWCASE</span></h1>
+        <h1>ELLE复盘设计系统 <span class="b">SHOWCASE</span></h1>
         <p class="desc">&gt; 这是一份**可复用的设计规范**。任何 agent 在生成中文数据复盘报告(单文件 HTML) &gt; 都可以引用本文档落地视觉风格,而不必从零重新设计。 &gt; 当前主范例:`length-analysis.html`(26 春连衣裙 · 衣长维度分析)。 ---</p>
       </div>
     </header>
@@ -258,9 +258,9 @@
       <span class="genre-tag-badge">电子杂志 &amp; 舞台构图</span>
       <div class="genre-info-body">
         <strong>Editorial &amp; Stage Spec — 适用场景与构图指导</strong>
-        ⚠️ 构图提示: 此系统包含强烈的杂志构图语法与舞台版式范式（如不对称分栏、大字号/页码、图注井）。请在 Slide/封面/汇报中保留其戏剧情感，切勿降级为三等分通用 SaaS 卡片！<br>
+        ⚠️ 构图提示: 此系统包含强烈的杂志构图语法与舞台版式范式（如大号衬线标题 Color.、不对称分栏、图注井）。请在 Slide/封面/汇报中保留其优雅排版与红线点睛，切勿降级为三等分通用 SaaS 卡片！<br>
         <span style="font-size:11px; opacity:0.8; margin-top:4px; display:block;">
-          推荐场景: <code>PPT/Slide, 杂志封面, 汇报大图, 特色页面</code>
+          推荐场景: <code>PPT/Slide, 杂志封面, 汇报大图, 品牌月报</code>
         </span>
       </div>
     </div>
@@ -268,7 +268,8 @@
     <!-- Agent Quick Command Bar -->
     <div class="agent-prompt-bar">
       <div class="agent-prompt-text">
-        Please reference the design system at: /Users/lianglei/Projects/code/design-gallery/systems/elle-27-dress-recap/DESIGN.md (⚠️ 构图提示: 此系统包含强烈的杂志构图语法与舞台版式范式（如不对称分栏、大字号/页码、图注井）。请在 Slide/封面/汇报中保留其戏剧情感，切勿降级为三等分通用 SaaS 卡片！)
+        Please reference the design system defined at: /Users/lianglei/Projects/code/design-gallery/systems/elle-recap-system/DESIGN.md
+[Layout Guidance]: ⚠️ 构图提示: 此系统包含强烈的杂志构图语法与舞台版式范式（如大号衬线标题 Color.、不对称分栏、图注井）。请在 Slide/封面/汇报中保留其优雅排版与红线点睛，切勿降级为三等分通用 SaaS 卡片！
       </div>
       <button class="btn-copy" onclick="copyPrompt()">复制 AGENT 指令与范式</button>
     </div>
@@ -276,83 +277,83 @@
     <!-- Section 1: Color Palette -->
     <div class="sec-title">01 · Palette Swatches & Roles</div>
     <div class="swatch-grid">
-      <div class="swatch-card" style="border: 1px solid rgba(255, 255, 255, 0.25); background: #8B0A1F;">
+      <div class="swatch-card" style="border: 1px solid #000000; background: #FFFFFF;">
         <div class="swatch-color" style="background:#C8102E; display:flex; align-items:flex-end; padding:8px;">
           <span style="font-family:var(--font-mono); font-size:10px; font-weight:700; color:#FFFFFF; background:rgba(0,0,0,0.25); padding:2px 4px; border-radius:2px;">#01</span>
         </div>
         <div class="swatch-info" style="padding:10px 12px; display:flex; justify-content:space-between; align-items:center;">
-          <span class="swatch-hex" style="font-family:var(--font-mono); font-size:12px; font-weight:700; color:#FAFAFA;">#C8102E</span>
-          <span class="swatch-role" style="font-size:10px; color:rgba(250, 250, 250, 0.65); text-transform:uppercase;">Role 01</span>
+          <span class="swatch-hex" style="font-family:var(--font-mono); font-size:12px; font-weight:700; color:#111111;">#C8102E</span>
+          <span class="swatch-role" style="font-size:10px; color:#666666; text-transform:uppercase;">Role 01</span>
         </div>
       </div>
     
-      <div class="swatch-card" style="border: 1px solid rgba(255, 255, 255, 0.25); background: #8B0A1F;">
+      <div class="swatch-card" style="border: 1px solid #000000; background: #FFFFFF;">
         <div class="swatch-color" style="background:#8B0A1F; display:flex; align-items:flex-end; padding:8px;">
           <span style="font-family:var(--font-mono); font-size:10px; font-weight:700; color:#FFFFFF; background:rgba(0,0,0,0.25); padding:2px 4px; border-radius:2px;">#02</span>
         </div>
         <div class="swatch-info" style="padding:10px 12px; display:flex; justify-content:space-between; align-items:center;">
-          <span class="swatch-hex" style="font-family:var(--font-mono); font-size:12px; font-weight:700; color:#FAFAFA;">#8B0A1F</span>
-          <span class="swatch-role" style="font-size:10px; color:rgba(250, 250, 250, 0.65); text-transform:uppercase;">Role 02</span>
+          <span class="swatch-hex" style="font-family:var(--font-mono); font-size:12px; font-weight:700; color:#111111;">#8B0A1F</span>
+          <span class="swatch-role" style="font-size:10px; color:#666666; text-transform:uppercase;">Role 02</span>
         </div>
       </div>
     
-      <div class="swatch-card" style="border: 1px solid rgba(255, 255, 255, 0.25); background: #8B0A1F;">
+      <div class="swatch-card" style="border: 1px solid #000000; background: #FFFFFF;">
         <div class="swatch-color" style="background:#FCE7EA; display:flex; align-items:flex-end; padding:8px;">
           <span style="font-family:var(--font-mono); font-size:10px; font-weight:700; color:#000000; background:rgba(0,0,0,0.25); padding:2px 4px; border-radius:2px;">#03</span>
         </div>
         <div class="swatch-info" style="padding:10px 12px; display:flex; justify-content:space-between; align-items:center;">
-          <span class="swatch-hex" style="font-family:var(--font-mono); font-size:12px; font-weight:700; color:#FAFAFA;">#FCE7EA</span>
-          <span class="swatch-role" style="font-size:10px; color:rgba(250, 250, 250, 0.65); text-transform:uppercase;">Role 03</span>
+          <span class="swatch-hex" style="font-family:var(--font-mono); font-size:12px; font-weight:700; color:#111111;">#FCE7EA</span>
+          <span class="swatch-role" style="font-size:10px; color:#666666; text-transform:uppercase;">Role 03</span>
         </div>
       </div>
     
-      <div class="swatch-card" style="border: 1px solid rgba(255, 255, 255, 0.25); background: #8B0A1F;">
+      <div class="swatch-card" style="border: 1px solid #000000; background: #FFFFFF;">
         <div class="swatch-color" style="background:#0A0A0A; display:flex; align-items:flex-end; padding:8px;">
           <span style="font-family:var(--font-mono); font-size:10px; font-weight:700; color:#FFFFFF; background:rgba(0,0,0,0.25); padding:2px 4px; border-radius:2px;">#04</span>
         </div>
         <div class="swatch-info" style="padding:10px 12px; display:flex; justify-content:space-between; align-items:center;">
-          <span class="swatch-hex" style="font-family:var(--font-mono); font-size:12px; font-weight:700; color:#FAFAFA;">#0A0A0A</span>
-          <span class="swatch-role" style="font-size:10px; color:rgba(250, 250, 250, 0.65); text-transform:uppercase;">Role 04</span>
+          <span class="swatch-hex" style="font-family:var(--font-mono); font-size:12px; font-weight:700; color:#111111;">#0A0A0A</span>
+          <span class="swatch-role" style="font-size:10px; color:#666666; text-transform:uppercase;">Role 04</span>
         </div>
       </div>
     
-      <div class="swatch-card" style="border: 1px solid rgba(255, 255, 255, 0.25); background: #8B0A1F;">
+      <div class="swatch-card" style="border: 1px solid #000000; background: #FFFFFF;">
         <div class="swatch-color" style="background:#2A2A2A; display:flex; align-items:flex-end; padding:8px;">
           <span style="font-family:var(--font-mono); font-size:10px; font-weight:700; color:#FFFFFF; background:rgba(0,0,0,0.25); padding:2px 4px; border-radius:2px;">#05</span>
         </div>
         <div class="swatch-info" style="padding:10px 12px; display:flex; justify-content:space-between; align-items:center;">
-          <span class="swatch-hex" style="font-family:var(--font-mono); font-size:12px; font-weight:700; color:#FAFAFA;">#2A2A2A</span>
-          <span class="swatch-role" style="font-size:10px; color:rgba(250, 250, 250, 0.65); text-transform:uppercase;">Role 05</span>
+          <span class="swatch-hex" style="font-family:var(--font-mono); font-size:12px; font-weight:700; color:#111111;">#2A2A2A</span>
+          <span class="swatch-role" style="font-size:10px; color:#666666; text-transform:uppercase;">Role 05</span>
         </div>
       </div>
     
-      <div class="swatch-card" style="border: 1px solid rgba(255, 255, 255, 0.25); background: #8B0A1F;">
+      <div class="swatch-card" style="border: 1px solid #000000; background: #FFFFFF;">
         <div class="swatch-color" style="background:#6B6B6B; display:flex; align-items:flex-end; padding:8px;">
           <span style="font-family:var(--font-mono); font-size:10px; font-weight:700; color:#FFFFFF; background:rgba(0,0,0,0.25); padding:2px 4px; border-radius:2px;">#06</span>
         </div>
         <div class="swatch-info" style="padding:10px 12px; display:flex; justify-content:space-between; align-items:center;">
-          <span class="swatch-hex" style="font-family:var(--font-mono); font-size:12px; font-weight:700; color:#FAFAFA;">#6B6B6B</span>
-          <span class="swatch-role" style="font-size:10px; color:rgba(250, 250, 250, 0.65); text-transform:uppercase;">Role 06</span>
+          <span class="swatch-hex" style="font-family:var(--font-mono); font-size:12px; font-weight:700; color:#111111;">#6B6B6B</span>
+          <span class="swatch-role" style="font-size:10px; color:#666666; text-transform:uppercase;">Role 06</span>
         </div>
       </div>
     
-      <div class="swatch-card" style="border: 1px solid rgba(255, 255, 255, 0.25); background: #8B0A1F;">
+      <div class="swatch-card" style="border: 1px solid #000000; background: #FFFFFF;">
         <div class="swatch-color" style="background:#9E9E9E; display:flex; align-items:flex-end; padding:8px;">
           <span style="font-family:var(--font-mono); font-size:10px; font-weight:700; color:#000000; background:rgba(0,0,0,0.25); padding:2px 4px; border-radius:2px;">#07</span>
         </div>
         <div class="swatch-info" style="padding:10px 12px; display:flex; justify-content:space-between; align-items:center;">
-          <span class="swatch-hex" style="font-family:var(--font-mono); font-size:12px; font-weight:700; color:#FAFAFA;">#9E9E9E</span>
-          <span class="swatch-role" style="font-size:10px; color:rgba(250, 250, 250, 0.65); text-transform:uppercase;">Role 07</span>
+          <span class="swatch-hex" style="font-family:var(--font-mono); font-size:12px; font-weight:700; color:#111111;">#9E9E9E</span>
+          <span class="swatch-role" style="font-size:10px; color:#666666; text-transform:uppercase;">Role 07</span>
         </div>
       </div>
     
-      <div class="swatch-card" style="border: 1px solid rgba(255, 255, 255, 0.25); background: #8B0A1F;">
+      <div class="swatch-card" style="border: 1px solid #000000; background: #FFFFFF;">
         <div class="swatch-color" style="background:#FFFFFF; display:flex; align-items:flex-end; padding:8px;">
           <span style="font-family:var(--font-mono); font-size:10px; font-weight:700; color:#000000; background:rgba(0,0,0,0.25); padding:2px 4px; border-radius:2px;">#08</span>
         </div>
         <div class="swatch-info" style="padding:10px 12px; display:flex; justify-content:space-between; align-items:center;">
-          <span class="swatch-hex" style="font-family:var(--font-mono); font-size:12px; font-weight:700; color:#FAFAFA;">#FFFFFF</span>
-          <span class="swatch-role" style="font-size:10px; color:rgba(250, 250, 250, 0.65); text-transform:uppercase;">Role 08</span>
+          <span class="swatch-hex" style="font-family:var(--font-mono); font-size:12px; font-weight:700; color:#111111;">#FFFFFF</span>
+          <span class="swatch-role" style="font-size:10px; color:#666666; text-transform:uppercase;">Role 08</span>
         </div>
       </div>
     </div>
@@ -399,7 +400,7 @@
         <h3>Form Inputs</h3>
         <div class="form-group">
           <label class="form-label">System Identity</label>
-          <input type="text" class="form-input" value="ELLE 27春连衣裙复盘设计系统 Baseline" readonly>
+          <input type="text" class="form-input" value="ELLE复盘设计系统 Baseline" readonly>
         </div>
         <div class="form-group">
           <label class="form-label">Configuration Preset</label>
@@ -414,9 +415,9 @@
 
         <pre style="background:var(--bg); color:var(--text); border:1px solid var(--line); padding:14px; font-family:var(--font-mono); font-size:12px; overflow-x:auto;">
 :root {
-  --bg: #C8102E;
-  --surface: #8B0A1F;
-  --accent: #6B6B6B;
+  --bg: #FCE7EA;
+  --surface: #FFFFFF;
+  --accent: #C8102E;
 }</pre>
       </div>
     </div>
@@ -436,19 +437,19 @@
         <tbody>
           <tr>
             <td><strong>Background Base</strong></td>
-            <td><code>#C8102E</code></td>
+            <td><code>#FCE7EA</code></td>
             <td>Page canvas & primary background</td>
             <td><span style="background:var(--accent); color:var(--accent-text); font-size:10px; font-weight:700; padding:2px 6px;">LOCKED</span></td>
           </tr>
           <tr>
             <td><strong>Surface Secondary</strong></td>
-            <td><code>#8B0A1F</code></td>
+            <td><code>#FFFFFF</code></td>
             <td>Card panels, sidebars & elevated rows</td>
             <td><code>Active</code></td>
           </tr>
           <tr>
             <td><strong>Accent Highlight</strong></td>
-            <td><code>#6B6B6B</code></td>
+            <td><code>#C8102E</code></td>
             <td>Key metrics, active badges & hover borders</td>
             <td><code>Active</code></td>
           </tr>
@@ -459,7 +460,7 @@
 
   <script>
     function copyPrompt() {
-      const text = "Please reference the design system defined at: /Users/lianglei/Projects/code/design-gallery/systems/elle-27-dress-recap/DESIGN.md\n[Layout Guidance]: ⚠️ 构图提示: 此系统包含强烈的杂志构图语法与舞台版式范式（如不对称分栏、大字号/页码、图注井）。请在 Slide/封面/汇报中保留其戏剧情感，切勿降级为三等分通用 SaaS 卡片！";
+      const text = "Please reference the design system defined at: /Users/lianglei/Projects/code/design-gallery/systems/elle-recap-system/DESIGN.md\n[Layout Guidance]: ⚠️ 构图提示: 此系统包含强烈的杂志构图语法与舞台版式范式（如大号衬线标题 Color.、不对称分栏、图注井）。请在 Slide/封面/汇报中保留其优雅排版与红线点睛，切勿降级为三等分通用 SaaS 卡片！";
       navigator.clipboard.writeText(text).then(() => {
         alert("已复制 Agent 引用指令与范式避坑说明！");
       }).catch(() => {
