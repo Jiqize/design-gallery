@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DESIGN HUB & GALLERY — Swiss Research System</title>
+  <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+  <div class="site-wrapper">
+    <!-- Hero Header (Swiss Research Style) -->
+    <header class="hero">
+      <div class="ref">
+        <div class="id">01</div>
+        <div class="kind">
+          <b>SYSTEMS</b>2026 / 08 / 11<br>v1.2 GALLERY
+        </div>
+      </div>
+      <div class="body">
+        <div class="pre">
+          <span>Design Systems Hub</span>
+          <span>Offline & Agent Ready</span>
+        </div>
+        <h1>
+          <span class="a">DESIGN</span>
+          <span class="b">HUB</span>
+          <span class="a">& GALLERY</span>
+        </h1>
+        <div class="deck">个人极简设计系统沉淀库。支持离线缩略图展示、交互 Showcase 预览，以及一键复制给 AI Agent 的引用指令与绝对路径。</div>
+        
+        <div class="strip">
+          <div>
+            <span class="k">Total Systems</span>
+            <span class="v" id="statTotal">0 <small>已收录规范</small></span>
+          </div>
+          <div>
+            <span class="k">Starred</span>
+            <span class="v" id="statStarred">0 <small>已收藏项目</small></span>
+          </div>
+          <div>
+            <span class="k">Format</span>
+            <span class="v">DESIGN.md <small>+ HTML Showcase</small></span>
+          </div>
+          <div>
+            <span class="k">Integration</span>
+            <span class="v">Agent Ready <small>Skill: archive-design-md</small></span>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- Two Column Layout: Sidebar + Main Area -->
+    <div class="layout">
+      <!-- Sidebar / Aside -->
+      <aside class="sidebar">
+        <div class="search-block">
+          <label class="section-label">SEARCH · 搜索</label>
+          <div class="search-input-wrapper">
+            <input type="text" id="searchInput" placeholder="搜索名称、标签或描述...">
+          </div>
+        </div>
+
+        <div class="nav-block">
+          <label class="section-label">NAVIGATE · 视图</label>
+          <ul class="nav-list">
+            <li class="nav-item active" data-filter="all">
+              <span class="num">01</span>
+              <span class="text">全部系统 ALL</span>
+              <span class="count-badge" id="countAll">0</span>
+            </li>
+            <li class="nav-item" data-filter="favorites">
+              <span class="num star-num">★</span>
+              <span class="text">我的收藏 FAVORITES</span>
+              <span class="count-badge" id="countFav">0</span>
+            </li>
+          </ul>
+        </div>
+
+        <div class="tags-block">
+          <label class="section-label">TAGS · 标签筛选</label>
+          <div class="tags-cloud" id="tagsCloud">
+            <!-- 动态渲染标签 -->
+          </div>
+        </div>
+
+        <div class="index-block">
+          <label class="section-label">INDEX · 索引目录</label>
+          <ul class="quick-index-list" id="quickIndexList">
+            <!-- 动态渲染快捷导航列表 -->
+          </ul>
+        </div>
+      </aside>
+
+      <!-- Main Content -->
+      <main class="main-content">
+        <div class="content-header">
+          <div class="view-title">
+            <h2 id="viewHeading">全部设计系统</h2>
+            <span class="view-desc" id="viewSubtext">按更新时间倒序排列</span>
+          </div>
+          <button class="reset-filter-btn" id="resetFilterBtn" style="display: none;">清除筛选 ✕</button>
+        </div>
+
+        <div class="systems-grid" id="systemsGrid">
+          <!-- 动态渲染设计风格卡片 -->
+        </div>
+      </main>
+    </div>
+  </div>
+
+  <!-- Markdown Document Preview Modal -->
+  <div class="modal-overlay" id="mdModal">
+    <div class="modal-content">
+      <div class="modal-header">
+        <div class="modal-title-group">
+          <span class="modal-tag">DESIGN.md RAW</span>
+          <h3 id="mdModalTitle">Doc Viewer</h3>
+        </div>
+        <button class="close-btn" id="closeMdModalBtn">✕</button>
+      </div>
+      <div class="modal-body">
+        <pre><code id="mdModalCode">Loading...</code></pre>
+      </div>
+    </div>
+  </div>
+
+  <script src="assets/app.js"></script>
+</body>
+</html>

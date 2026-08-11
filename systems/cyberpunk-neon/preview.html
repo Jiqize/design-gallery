@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cyberpunk Neon — Showcase</title>
+  <style>
+    :root {
+      --bg-p: #0D0D11;
+      --bg-s: #16161F;
+      --text: #FF0055;
+      --accent: #00F0FF;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      background: var(--bg-s);
+      color: var(--text);
+      font-family: -apple-system, BlinkMacSystemFont, "Inter", system-ui, sans-serif;
+      padding: 40px 20px;
+      line-height: 1.6;
+    }
+    .wrap { max-width: 900px; margin: 0 auto; }
+    .hero {
+      background: var(--bg-p);
+      padding: 40px;
+      border-radius: 12px;
+      border: 1px solid rgba(0,0,0,0.08);
+      margin-bottom: 24px;
+    }
+    h1 { font-size: 32px; font-weight: 800; margin-bottom: 12px; }
+    .desc { color: opacity 0.8; font-size: 15px; margin-bottom: 24px; }
+    .palette-row { display: flex; gap: 10px; }
+    .card {
+      background: var(--bg-p);
+      border-radius: 12px;
+      border: 1px solid rgba(0,0,0,0.08);
+      padding: 24px;
+      margin-bottom: 16px;
+    }
+    .btn {
+      display: inline-block;
+      padding: 10px 20px;
+      background: var(--text);
+      color: var(--bg-p);
+      border-radius: 6px;
+      font-weight: 600;
+      text-decoration: none;
+      border: none;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="hero">
+      <h1>Cyberpunk Neon</h1>
+      <p class="desc">Dark background with glowing neon accents, high-contrast futuristic UI components, glassmorphism, an</p>
+      <div class="palette-row"><div style="width:36px; height:36px; border-radius:6px; background:#0D0D11; border:1px solid rgba(0,0,0,0.1);" title="#0D0D11"></div><div style="width:36px; height:36px; border-radius:6px; background:#16161F; border:1px solid rgba(0,0,0,0.1);" title="#16161F"></div><div style="width:36px; height:36px; border-radius:6px; background:#FF0055; border:1px solid rgba(0,0,0,0.1);" title="#FF0055"></div><div style="width:36px; height:36px; border-radius:6px; background:#00F0FF; border:1px solid rgba(0,0,0,0.1);" title="#00F0FF"></div><div style="width:36px; height:36px; border-radius:6px; background:#FFE600; border:1px solid rgba(0,0,0,0.1);" title="#FFE600"></div><div style="width:36px; height:36px; border-radius:6px; background:#F0F0F5; border:1px solid rgba(0,0,0,0.1);" title="#F0F0F5"></div></div>
+    </div>
+    <div class="card">
+      <h2>Interactive Controls</h2>
+      <p style="margin: 12px 0;">This is an auto-generated component showcase reflecting your design tokens.</p>
+      <button class="btn">Primary Action</button>
+    </div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>新品推广数据工作台 — Swiss Research Showcase</title>
+  <style>
+    :root {
+      --bg: #EEEDE9;
+      --fg: #FFFFFF;
+      --accent: #181A18;
+      --line: #000000;
+      --grid: #e5e5e5;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      background: var(--bg);
+      color: var(--fg);
+      font-family: "Helvetica Neue", -apple-system, sans-serif;
+      padding: 0 40px 60px;
+      line-height: 1.6;
+    }
+    .wrap { max-width: 1100px; margin: 0 auto; }
+    header.hero {
+      position: relative;
+      padding-top: 40px;
+      margin-bottom: 40px;
+      border-bottom: 2px solid var(--line);
+      display: flex;
+      gap: 40px;
+    }
+    header.hero::before {
+      content: "";
+      position: absolute;
+      top: 0; left: 0; right: 0;
+      height: 6px; background: var(--line);
+    }
+    .ref { width: 180px; flex-shrink: 0; }
+    .ref .id {
+      font-size: 72px; font-weight: 900; line-height: 0.9;
+      letter-spacing: -0.06em; margin-bottom: 12px;
+    }
+    .ref .id::after {
+      content: ""; display: block; width: 36px; height: 6px;
+      background: var(--accent); margin-top: 8px;
+    }
+    .ref .kind {
+      font-size: 11px; font-weight: 700; letter-spacing: 0.15em;
+      text-transform: uppercase; color: #666; border-top: 1px solid var(--line);
+      padding-top: 8px; margin-top: 12px;
+    }
+    .body-area { flex: 1; }
+    .pre-tag {
+      font-size: 11px; font-weight: 700; letter-spacing: 0.15em;
+      text-transform: uppercase; margin-bottom: 12px;
+    }
+    h1 { font-size: 52px; font-weight: 900; letter-spacing: -0.03em; margin-bottom: 16px; }
+    h1 .b { background: var(--accent); padding: 0 12px; color: #000; }
+    .desc { font-size: 16px; color: #555; max-width: 680px; margin-bottom: 32px; }
+    
+    .grid-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; margin-bottom: 32px; }
+    .card {
+      border: 1px solid var(--line);
+      padding: 24px; background: #fff;
+    }
+    .card h3 {
+      font-size: 18px; font-weight: 800; border-bottom: 2px solid var(--line);
+      padding-bottom: 8px; margin-bottom: 16px; text-transform: uppercase;
+    }
+    .palette-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 8px; }
+    .btn-swiss {
+      font-family: inherit; font-size: 12px; font-weight: 700;
+      letter-spacing: 0.1em; text-transform: uppercase;
+      padding: 10px 16px; border: 1px solid var(--line);
+      background: #000; color: #fff; cursor: pointer; margin-right: 8px;
+    }
+    .btn-swiss.accent { background: var(--accent); color: #000; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header class="hero">
+      <div class="ref">
+        <div class="id">01</div>
+        <div class="kind"><b>SHOWCASE</b>DESIGN SYSTEM<br>SWISS SPEC</div>
+      </div>
+      <div class="body-area">
+        <div class="pre-tag">Style Specimen</div>
+        <h1>新品推广数据工作台 <span class="b">SPEC</span></h1>
+        <p class="desc">状态：第二轮前端设计工艺与经营总览指标联动已实现并锁定视觉基线 日期：2026-07-24 视觉依据：`设计参考/IMG_8540.JPG` 至 `设计参考/IMG_8545.JPG`</p>
+      </div>
+    </header>
+
+    <div class="grid-2">
+      <div class="card">
+        <h3>01 · Palette Swatches</h3>
+        <div class="palette-grid"><div style="padding:16px; background:#EEEDE9; border:1px solid #000; font-family:monospace; font-size:11px; font-weight:700;">#EEEDE9</div><div style="padding:16px; background:#F8F7F4; border:1px solid #000; font-family:monospace; font-size:11px; font-weight:700;">#F8F7F4</div><div style="padding:16px; background:#FFFFFF; border:1px solid #000; font-family:monospace; font-size:11px; font-weight:700;">#FFFFFF</div><div style="padding:16px; background:#181A18; border:1px solid #000; font-family:monospace; font-size:11px; font-weight:700;">#181A18</div><div style="padding:16px; background:#747770; border:1px solid #000; font-family:monospace; font-size:11px; font-weight:700;">#747770</div><div style="padding:16px; background:#F07B2D; border:1px solid #000; font-family:monospace; font-size:11px; font-weight:700;">#F07B2D</div></div>
+      </div>
+      <div class="card">
+        <h3>02 · UI Component Actions</h3>
+        <p style="font-size:13px; margin-bottom:16px;">Precision component actions with International Typographic Style.</p>
+        <div>
+          <button class="btn-swiss">Primary Action</button>
+          <button class="btn-swiss accent">Accent Action</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

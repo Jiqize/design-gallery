@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fashion Monitor — Interactive Style Specimen</title>
+  <style>
+    :root {
+      --bg: #0A0A0A;
+      --surface: #9D1028;
+      --text: #FAFAFA;
+      --muted: rgba(250, 250, 250, 0.65);
+      --accent: #D8D6CF;
+      --accent-text: #000000;
+      --line: rgba(255, 255, 255, 0.25);
+      --line-subtle: rgba(255, 255, 255, 0.12);
+      --card-bg: #18181C;
+      --card-text: #FAFAFA;
+      --font-sans: "Helvetica Neue", -apple-system, "PingFang SC", sans-serif;
+      --font-mono: "Menlo", "SF Mono", "Courier New", monospace;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      background: var(--bg);
+      color: var(--text);
+      font-family: var(--font-sans);
+      padding: 0 40px 80px;
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+    }
+    .wrap { max-width: 1200px; margin: 0 auto; }
+    
+    /* Header & Hero */
+    header.hero {
+      position: relative;
+      padding-top: 40px;
+      margin-bottom: 48px;
+      border-bottom: 2px solid var(--line);
+      display: flex;
+      gap: 40px;
+    }
+    header.hero::before {
+      content: ""; position: absolute; top: 0; left: 0; right: 0;
+      height: 6px; background: var(--line);
+    }
+    .ref-col { width: 200px; flex-shrink: 0; }
+    .ref-col .num {
+      font-size: 80px; font-weight: 900; line-height: 0.9;
+      letter-spacing: -0.06em; margin-bottom: 12px;
+    }
+    .ref-col .num::after {
+      content: ""; display: block; width: 40px; height: 6px;
+      background: var(--accent); margin-top: 8px;
+    }
+    .ref-col .tag {
+      font-size: 11px; font-weight: 700; letter-spacing: 0.15em;
+      text-transform: uppercase; color: var(--muted); border-top: 1px solid var(--line);
+      padding-top: 8px; margin-top: 12px;
+    }
+    .hero-main { flex: 1; }
+    .pre-badge {
+      font-size: 11px; font-weight: 700; letter-spacing: 0.15em;
+      text-transform: uppercase; margin-bottom: 12px; display: inline-block;
+      padding: 2px 8px; background: var(--line); color: var(--bg);
+    }
+    h1 {
+      font-size: 52px; font-weight: 900; letter-spacing: -0.04em;
+      line-height: 1.05; margin-bottom: 16px; color: var(--text);
+    }
+    h1 .b { background: var(--accent); color: var(--accent-text); padding: 0 12px; display: inline-block; }
+    .desc { font-size: 16px; color: var(--muted); max-width: 720px; margin-bottom: 32px; }
+
+    .agent-prompt-bar {
+      background: var(--surface);
+      border: 1px solid var(--line);
+      padding: 16px 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 48px;
+    }
+    .agent-prompt-text {
+      font-family: var(--font-mono);
+      font-size: 12px;
+      color: var(--text);
+      word-break: break-all;
+    }
+    .btn-copy {
+      font-family: var(--font-sans);
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      padding: 8px 14px;
+      background: var(--line);
+      color: var(--bg);
+      border: 1px solid var(--line);
+      cursor: pointer;
+      flex-shrink: 0;
+      margin-left: 16px;
+    }
+    .btn-copy:hover { background: var(--accent); color: var(--accent-text); }
+
+    /* Section Component Blocks */
+    .sec-title {
+      font-size: 12px;
+      font-weight: 800;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: var(--text);
+      border-bottom: 2px solid var(--line);
+      padding-bottom: 8px;
+      margin-bottom: 24px;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+    .sec-title::before {
+      content: ""; display: inline-block; width: 8px; height: 8px; background: var(--accent);
+    }
+
+    /* Swatches Grid */
+    .swatch-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+      gap: 16px;
+      margin-bottom: 48px;
+    }
+    .swatch-card {
+      overflow: hidden;
+    }
+    .swatch-color { height: 72px; border-bottom: 1px solid var(--line-subtle); }
+
+    /* Layout Showcase Grid */
+    .showcase-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 24px;
+      margin-bottom: 48px;
+    }
+
+    .card-panel {
+      border: 1px solid var(--line);
+      background: var(--card-bg);
+      color: var(--card-text);
+      padding: 28px;
+    }
+    .card-panel h3 {
+      font-size: 20px;
+      font-weight: 800;
+      margin-bottom: 12px;
+      letter-spacing: -0.02em;
+      color: var(--card-text);
+    }
+    .card-panel p {
+      color: var(--muted);
+    }
+
+    /* Buttons showcase */
+    .btn-group { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 16px; }
+    .btn-demo {
+      font-family: var(--font-sans);
+      font-size: 12px;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      padding: 10px 18px;
+      border: 1px solid var(--line);
+      cursor: pointer;
+    }
+    .btn-demo.primary { background: var(--line); color: var(--bg); }
+    .btn-demo.accent { background: var(--accent); color: var(--accent-text); border-color: var(--line); }
+    .btn-demo.outline { background: transparent; color: var(--card-text); }
+
+    /* KPI Bento Card */
+    .kpi-row { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin-top: 16px; }
+    .kpi-box {
+      border: 1px solid var(--line);
+      padding: 16px;
+      background: var(--bg);
+      color: var(--text);
+    }
+    .kpi-num { font-size: 32px; font-weight: 900; letter-spacing: -0.04em; line-height: 1; margin-bottom: 4px; color: var(--text); }
+    .kpi-label { font-size: 11px; color: var(--muted); letter-spacing: 0.05em; text-transform: uppercase; }
+    .kpi-badge { display: inline-block; font-size: 10px; font-weight: 700; background: var(--accent); color: var(--accent-text); padding: 2px 6px; margin-top: 8px; }
+
+    /* Form Controls showcase */
+    .form-group { margin-bottom: 16px; }
+    .form-label { display: block; font-size: 11px; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; margin-bottom: 6px; color: var(--card-text); }
+    .form-input {
+      width: 100%; padding: 10px 12px; font-family: var(--font-sans); font-size: 13px;
+      border: 1px solid var(--line); background: var(--bg); color: var(--text); outline: none;
+    }
+
+    /* Callout Box */
+    .callout {
+      border-left: 4px solid var(--accent);
+      background: var(--surface);
+      border-top: 1px solid var(--line-subtle);
+      border-right: 1px solid var(--line-subtle);
+      border-bottom: 1px solid var(--line-subtle);
+      padding: 16px;
+      margin-top: 16px;
+      font-size: 13px;
+      color: var(--text);
+    }
+
+    /* Table Showcase */
+    .table-panel { border: 1px solid var(--line); margin-bottom: 48px; background: var(--card-bg); color: var(--card-text); }
+    table { width: 100%; border-collapse: collapse; text-align: left; }
+    th {
+      font-size: 11px; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase;
+      padding: 14px 16px; border-bottom: 2px solid var(--line); background: var(--surface); color: var(--text);
+    }
+    td { padding: 14px 16px; border-bottom: 1px solid var(--line-subtle); font-size: 13px; color: var(--card-text); }
+    tr:hover td { background: var(--surface); }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header class="hero">
+      <div class="ref-col">
+        <div class="num">01</div>
+        <div class="tag"><b>STYLE SPECIMEN</b>DESIGN SYSTEM</div>
+      </div>
+      <div class="hero-main">
+        <span class="pre-badge">Interactive Component Specimen</span>
+        <h1>Fashion Monitor <span class="b">SHOWCASE</span></h1>
+        <p class="desc">定制设计系统</p>
+      </div>
+    </header>
+
+    <!-- Agent Quick Command Bar -->
+    <div class="agent-prompt-bar">
+      <div class="agent-prompt-text">
+        Please reference and strictly implement the design system defined at: /Users/lianglei/Projects/code/design-gallery/systems/fashion-monitor/DESIGN.md
+      </div>
+      <button class="btn-copy" onclick="copyPrompt()">复制 AGENT 路径</button>
+    </div>
+
+    <!-- Section 1: Color Palette -->
+    <div class="sec-title">01 · Palette Swatches & Roles</div>
+    <div class="swatch-grid">
+      <div class="swatch-card" style="border: 1px solid rgba(255, 255, 255, 0.25); background: #9D1028;">
+        <div class="swatch-color" style="background:#0A0A0A; display:flex; align-items:flex-end; padding:8px;">
+          <span style="font-family:var(--font-mono); font-size:10px; font-weight:700; color:#FFFFFF; background:rgba(0,0,0,0.25); padding:2px 4px; border-radius:2px;">#01</span>
+        </div>
+        <div class="swatch-info" style="padding:10px 12px; display:flex; justify-content:space-between; align-items:center;">
+          <span class="swatch-hex" style="font-family:var(--font-mono); font-size:12px; font-weight:700; color:#FAFAFA;">#0A0A0A</span>
+          <span class="swatch-role" style="font-size:10px; color:rgba(250, 250, 250, 0.65); text-transform:uppercase;">Role 01</span>
+        </div>
+      </div>
+    
+      <div class="swatch-card" style="border: 1px solid rgba(255, 255, 255, 0.25); background: #9D1028;">
+        <div class="swatch-color" style="background:#F5F4F0; display:flex; align-items:flex-end; padding:8px;">
+          <span style="font-family:var(--font-mono); font-size:10px; font-weight:700; color:#000000; background:rgba(0,0,0,0.25); padding:2px 4px; border-radius:2px;">#02</span>
+        </div>
+        <div class="swatch-info" style="padding:10px 12px; display:flex; justify-content:space-between; align-items:center;">
+          <span class="swatch-hex" style="font-family:var(--font-mono); font-size:12px; font-weight:700; color:#FAFAFA;">#F5F4F0</span>
+          <span class="swatch-role" style="font-size:10px; color:rgba(250, 250, 250, 0.65); text-transform:uppercase;">Role 02</span>
+        </div>
+      </div>
+    
+      <div class="swatch-card" style="border: 1px solid rgba(255, 255, 255, 0.25); background: #9D1028;">
+        <div class="swatch-color" style="background:#FFFFFF; display:flex; align-items:flex-end; padding:8px;">
+          <span style="font-family:var(--font-mono); font-size:10px; font-weight:700; color:#000000; background:rgba(0,0,0,0.25); padding:2px 4px; border-radius:2px;">#03</span>
+        </div>
+        <div class="swatch-info" style="padding:10px 12px; display:flex; justify-content:space-between; align-items:center;">
+          <span class="swatch-hex" style="font-family:var(--font-mono); font-size:12px; font-weight:700; color:#FAFAFA;">#FFFFFF</span>
+          <span class="swatch-role" style="font-size:10px; color:rgba(250, 250, 250, 0.65); text-transform:uppercase;">Role 03</span>
+        </div>
+      </div>
+    
+      <div class="swatch-card" style="border: 1px solid rgba(255, 255, 255, 0.25); background: #9D1028;">
+        <div class="swatch-color" style="background:#D8D6CF; display:flex; align-items:flex-end; padding:8px;">
+          <span style="font-family:var(--font-mono); font-size:10px; font-weight:700; color:#000000; background:rgba(0,0,0,0.25); padding:2px 4px; border-radius:2px;">#04</span>
+        </div>
+        <div class="swatch-info" style="padding:10px 12px; display:flex; justify-content:space-between; align-items:center;">
+          <span class="swatch-hex" style="font-family:var(--font-mono); font-size:12px; font-weight:700; color:#FAFAFA;">#D8D6CF</span>
+          <span class="swatch-role" style="font-size:10px; color:rgba(250, 250, 250, 0.65); text-transform:uppercase;">Role 04</span>
+        </div>
+      </div>
+    
+      <div class="swatch-card" style="border: 1px solid rgba(255, 255, 255, 0.25); background: #9D1028;">
+        <div class="swatch-color" style="background:#676560; display:flex; align-items:flex-end; padding:8px;">
+          <span style="font-family:var(--font-mono); font-size:10px; font-weight:700; color:#FFFFFF; background:rgba(0,0,0,0.25); padding:2px 4px; border-radius:2px;">#05</span>
+        </div>
+        <div class="swatch-info" style="padding:10px 12px; display:flex; justify-content:space-between; align-items:center;">
+          <span class="swatch-hex" style="font-family:var(--font-mono); font-size:12px; font-weight:700; color:#FAFAFA;">#676560</span>
+          <span class="swatch-role" style="font-size:10px; color:rgba(250, 250, 250, 0.65); text-transform:uppercase;">Role 05</span>
+        </div>
+      </div>
+    
+      <div class="swatch-card" style="border: 1px solid rgba(255, 255, 255, 0.25); background: #9D1028;">
+        <div class="swatch-color" style="background:#9D1028; display:flex; align-items:flex-end; padding:8px;">
+          <span style="font-family:var(--font-mono); font-size:10px; font-weight:700; color:#FFFFFF; background:rgba(0,0,0,0.25); padding:2px 4px; border-radius:2px;">#06</span>
+        </div>
+        <div class="swatch-info" style="padding:10px 12px; display:flex; justify-content:space-between; align-items:center;">
+          <span class="swatch-hex" style="font-family:var(--font-mono); font-size:12px; font-weight:700; color:#FAFAFA;">#9D1028</span>
+          <span class="swatch-role" style="font-size:10px; color:rgba(250, 250, 250, 0.65); text-transform:uppercase;">Role 06</span>
+        </div>
+      </div>
+    
+      <div class="swatch-card" style="border: 1px solid rgba(255, 255, 255, 0.25); background: #9D1028;">
+        <div class="swatch-color" style="background:#395C78; display:flex; align-items:flex-end; padding:8px;">
+          <span style="font-family:var(--font-mono); font-size:10px; font-weight:700; color:#FFFFFF; background:rgba(0,0,0,0.25); padding:2px 4px; border-radius:2px;">#07</span>
+        </div>
+        <div class="swatch-info" style="padding:10px 12px; display:flex; justify-content:space-between; align-items:center;">
+          <span class="swatch-hex" style="font-family:var(--font-mono); font-size:12px; font-weight:700; color:#FAFAFA;">#395C78</span>
+          <span class="swatch-role" style="font-size:10px; color:rgba(250, 250, 250, 0.65); text-transform:uppercase;">Role 07</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Section 2: UI Component Showcase -->
+    <div class="sec-title">02 · UI Components & Controls</div>
+    <div class="showcase-grid">
+      <!-- Buttons & Actions -->
+      <div class="card-panel">
+        <h3>Button Actions</h3>
+        <p style="font-size:13px; margin-bottom:16px;">Action buttons with precision borders and accent emphasis.</p>
+        <div class="btn-group">
+          <button class="btn-demo primary">Primary Action</button>
+          <button class="btn-demo accent">Highlight Action</button>
+          <button class="btn-demo outline">Secondary Action</button>
+        </div>
+
+        <div class="callout" style="margin-top:24px;">
+          <strong>Design Note:</strong> High-contrast action states designed for crisp readability and immediate feedback.
+        </div>
+      </div>
+
+      <!-- Bento Cards & Metrics -->
+      <div class="card-panel">
+        <h3>Data Cards & Metrics</h3>
+        <p style="font-size:13px; margin-bottom:16px;">Bento grid metric display blocks with trend badges.</p>
+
+        <div class="kpi-row">
+          <div class="kpi-box">
+            <div class="kpi-num">98.4%</div>
+            <div class="kpi-label">Conversion Accuracy</div>
+            <span class="kpi-badge">+12.4% ↑</span>
+          </div>
+          <div class="kpi-box">
+            <div class="kpi-num">1.2s</div>
+            <div class="kpi-label">Average Response</div>
+            <span class="kpi-badge">Optimal</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Form Inputs & Selects -->
+      <div class="card-panel">
+        <h3>Form Inputs</h3>
+        <div class="form-group">
+          <label class="form-label">System Identity</label>
+          <input type="text" class="form-input" value="Fashion Monitor Baseline" readonly>
+        </div>
+        <div class="form-group">
+          <label class="form-label">Configuration Preset</label>
+          <input type="text" class="form-input" placeholder="Type to search design tokens...">
+        </div>
+      </div>
+
+      <!-- Code & Markdown Spec -->
+      <div class="card-panel">
+        <h3>Typography & Code</h3>
+        <p style="font-size:13px; margin-bottom:12px;">Monospace code block styling for token specifications.</p>
+
+        <pre style="background:var(--bg); color:var(--text); border:1px solid var(--line); padding:14px; font-family:var(--font-mono); font-size:12px; overflow-x:auto;">
+:root {
+  --bg: #0A0A0A;
+  --surface: #9D1028;
+  --accent: #D8D6CF;
+}</pre>
+      </div>
+    </div>
+
+    <!-- Section 3: Data Table -->
+    <div class="sec-title">03 · Data Table Layout</div>
+    <div class="table-panel">
+      <table>
+        <thead>
+          <tr>
+            <th>Token Parameter</th>
+            <th>Value / Code</th>
+            <th>Role & Scope</th>
+            <th>Status</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>Background Base</strong></td>
+            <td><code>#0A0A0A</code></td>
+            <td>Page canvas & primary background</td>
+            <td><span style="background:var(--accent); color:var(--accent-text); font-size:10px; font-weight:700; padding:2px 6px;">LOCKED</span></td>
+          </tr>
+          <tr>
+            <td><strong>Surface Secondary</strong></td>
+            <td><code>#9D1028</code></td>
+            <td>Card panels, sidebars & elevated rows</td>
+            <td><code>Active</code></td>
+          </tr>
+          <tr>
+            <td><strong>Accent Highlight</strong></td>
+            <td><code>#D8D6CF</code></td>
+            <td>Key metrics, active badges & hover borders</td>
+            <td><code>Active</code></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <script>
+    function copyPrompt() {
+      const text = "Please reference and strictly implement the design system defined at: /Users/lianglei/Projects/code/design-gallery/systems/fashion-monitor/DESIGN.md";
+      navigator.clipboard.writeText(text).then(() => {
+        alert("已复制 Agent 引用绝对路径与指令！");
+      }).catch(() => {
+        prompt("手动复制 Agent 引用指令：", text);
+      });
+    }
+  </script>
+</body>
+</html>

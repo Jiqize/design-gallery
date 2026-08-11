@@ -1,0 +1,330 @@
+{
+  "updatedAt": "2026-08-11T22:17:02.587Z",
+  "systems": [
+    {
+      "id": "editorial-style",
+      "name": "Editorial Style",
+      "slug": "editorial-style",
+      "description": "定制设计系统",
+      "tags": [
+        "Minimalist",
+        "Dark Mode",
+        "Editorial",
+        "Bento"
+      ],
+      "palette": [
+        "#F1EFEA",
+        "#E8E5DE",
+        "#0A0A0B",
+        "#6A665F",
+        "#8A3D2E",
+        "#243B53",
+        "#FFFFFF"
+      ],
+      "designMdPath": "/Users/lianglei/Projects/code/design-gallery/systems/editorial-style/DESIGN.md",
+      "previewHtmlPath": "systems/editorial-style/preview.html",
+      "createdAt": "2026-08-11"
+    },
+    {
+      "id": "product-analytics-dashboard",
+      "name": "新品推广数据工作台",
+      "slug": "product-analytics-dashboard",
+      "description": "状态：第二轮前端设计工艺与经营总览指标联动已实现并锁定视觉基线 日期：2026-07-24 视觉依据：`设计参考/IMG_8540.JPG` 至 `设计参考/IMG_8545.JPG`",
+      "tags": [
+        "Bento"
+      ],
+      "palette": [
+        "#EEEDE9",
+        "#F8F7F4",
+        "#FFFFFF",
+        "#181A18",
+        "#747770",
+        "#F07B2D",
+        "#3B86D1",
+        "#2F9B68"
+      ],
+      "designMdPath": "/Users/lianglei/Projects/code/design-gallery/systems/product-analytics-dashboard/DESIGN.md",
+      "previewHtmlPath": "systems/product-analytics-dashboard/preview.html",
+      "createdAt": "2026-08-11"
+    },
+    {
+      "id": "pop-art-style",
+      "name": "Pop Art Style",
+      "slug": "pop-art-style",
+      "description": "定制设计系统",
+      "tags": [
+        "Editorial",
+        "Bento"
+      ],
+      "palette": [
+        "#FFF2C9",
+        "#F6BCD0",
+        "#111111",
+        "#4E4536",
+        "#ED2D31",
+        "#1769C2",
+        "#FFFFFF"
+      ],
+      "designMdPath": "/Users/lianglei/Projects/code/design-gallery/systems/pop-art-style/DESIGN.md",
+      "previewHtmlPath": "systems/pop-art-style/preview.html",
+      "createdAt": "2026-08-11"
+    },
+    {
+      "id": "art-deco-style",
+      "name": "Art Deco Style",
+      "slug": "art-deco-style",
+      "description": "定制设计系统",
+      "tags": [
+        "Dark Mode",
+        "Editorial",
+        "Bento"
+      ],
+      "palette": [
+        "#101112",
+        "#1B1B1B",
+        "#F1E8D6",
+        "#B9AE99",
+        "#C7A25B",
+        "#6E1425"
+      ],
+      "designMdPath": "/Users/lianglei/Projects/code/design-gallery/systems/art-deco-style/DESIGN.md",
+      "previewHtmlPath": "systems/art-deco-style/preview.html",
+      "createdAt": "2026-08-11"
+    },
+    {
+      "id": "brutalism-style",
+      "name": "Brutalism Style",
+      "slug": "brutalism-style",
+      "description": "定制设计系统",
+      "tags": [
+        "Glassmorphism",
+        "Editorial",
+        "Bento"
+      ],
+      "palette": [
+        "#F5F5F2",
+        "#DCDCDC",
+        "#080808",
+        "#444444",
+        "#2448FF",
+        "#FF2B2B",
+        "#FFFFFF"
+      ],
+      "designMdPath": "/Users/lianglei/Projects/code/design-gallery/systems/brutalism-style/DESIGN.md",
+      "previewHtmlPath": "systems/brutalism-style/preview.html",
+      "createdAt": "2026-08-11"
+    },
+    {
+      "id": "memphis-style",
+      "name": "Memphis Style",
+      "slug": "memphis-style",
+      "description": "定制设计系统",
+      "tags": [
+        "Bento"
+      ],
+      "palette": [
+        "#FFF3DF",
+        "#DCCCF0",
+        "#282436",
+        "#6C6676",
+        "#F16D5F",
+        "#21A9A1",
+        "#FFFFFF"
+      ],
+      "designMdPath": "/Users/lianglei/Projects/code/design-gallery/systems/memphis-style/DESIGN.md",
+      "previewHtmlPath": "systems/memphis-style/preview.html",
+      "createdAt": "2026-08-11"
+    },
+    {
+      "id": "y2k-cyber-style",
+      "name": "Y2K Cyber Style",
+      "slug": "y2k-cyber-style",
+      "description": "定制设计系统",
+      "tags": [
+        "Minimalist",
+        "Dark Mode",
+        "Glassmorphism",
+        "Bento"
+      ],
+      "palette": [
+        "#081329",
+        "#172F59",
+        "#EAF8FF",
+        "#A7BDD5",
+        "#65E8FF",
+        "#FF72D6",
+        "#071327"
+      ],
+      "designMdPath": "/Users/lianglei/Projects/code/design-gallery/systems/y2k-cyber-style/DESIGN.md",
+      "previewHtmlPath": "systems/y2k-cyber-style/preview.html",
+      "createdAt": "2026-08-11"
+    },
+    {
+      "id": "bauhaus-style",
+      "name": "Bauhaus Style",
+      "slug": "bauhaus-style",
+      "description": "定制设计系统",
+      "tags": [
+        "Glassmorphism",
+        "Editorial",
+        "Bento"
+      ],
+      "palette": [
+        "#F3EFE4",
+        "#E7E0D0",
+        "#111111",
+        "#5E5A52",
+        "#D8342A",
+        "#1749B4",
+        "#FFFFFF"
+      ],
+      "designMdPath": "/Users/lianglei/Projects/code/design-gallery/systems/bauhaus-style/DESIGN.md",
+      "previewHtmlPath": "systems/bauhaus-style/preview.html",
+      "createdAt": "2026-08-11"
+    },
+    {
+      "id": "marc-jacobs-report",
+      "name": "Marc Jacobs Report",
+      "slug": "marc-jacobs-report",
+      "description": "> 给所有做分册 HTML 的 worker（codex/opencode）：**严格照此执行**。目标是五份分册视觉零偏差，最终可无缝合订。 > 母版基准：`10_品牌价值与人群.html`（甲方已认可）。共享样式：`report.css`。 ---",
+      "tags": [
+        "Minimalist",
+        "Dark Mode",
+        "Editorial",
+        "Bento"
+      ],
+      "palette": [
+        "#FFFFFF",
+        "#111111",
+        "#C8102E",
+        "#F4F4F2",
+        "#E9E9E6",
+        "#DCDCD8",
+        "#6B6B66",
+        "#9A9A93"
+      ],
+      "designMdPath": "/Users/lianglei/Projects/code/design-gallery/systems/marc-jacobs-report/DESIGN.md",
+      "previewHtmlPath": "systems/marc-jacobs-report/preview.html",
+      "createdAt": "2026-08-11"
+    },
+    {
+      "id": "lovable-system",
+      "name": "Lovable System",
+      "slug": "lovable-system",
+      "description": "## 1. Visual Theme & Atmosphere Lovable's website radiates warmth through restraint. The entire page sits on a creamy, parchment-toned background (`#f",
+      "tags": [
+        "Minimalist",
+        "Dark Mode",
+        "Glassmorphism",
+        "Editorial",
+        "Bento"
+      ],
+      "palette": [
+        "#F7F4ED",
+        "#1C1C1C",
+        "#ECEAE4",
+        "#FCFBF8",
+        "#5F5F5D",
+        "#3B82F6",
+        "#FFFFFF"
+      ],
+      "designMdPath": "/Users/lianglei/Projects/code/design-gallery/systems/lovable-system/DESIGN.md",
+      "previewHtmlPath": "systems/lovable-system/preview.html",
+      "createdAt": "2026-08-11"
+    },
+    {
+      "id": "fashion-monitor",
+      "name": "Fashion Monitor",
+      "slug": "fashion-monitor",
+      "description": "定制设计系统",
+      "tags": [
+        "Dark Mode",
+        "Glassmorphism",
+        "Editorial",
+        "Bento",
+        "Fashion"
+      ],
+      "palette": [
+        "#0A0A0A",
+        "#F5F4F0",
+        "#FFFFFF",
+        "#D8D6CF",
+        "#676560",
+        "#9D1028",
+        "#395C78"
+      ],
+      "designMdPath": "/Users/lianglei/Projects/code/design-gallery/systems/fashion-monitor/DESIGN.md",
+      "previewHtmlPath": "systems/fashion-monitor/preview.html",
+      "createdAt": "2026-08-11"
+    },
+    {
+      "id": "swiss-research-system",
+      "name": "Swiss Research System",
+      "slug": "swiss-research-system",
+      "description": "- **黑白优先**:90% 内容用纯黑/白/灰,1 个强调色(蜜黄)承担全部视觉重量 - **栅格至死**:所有元素对齐到 8/12/24/48 px 网格,绝不\"差不多对齐\" - **数字说话**:所有可量化信息带编号,序号零填充(`01` `02` `13`) - **克制字体**:仅用 1 ",
+      "tags": [
+        "Minimalist",
+        "Glassmorphism",
+        "Editorial",
+        "Bento"
+      ],
+      "palette": [
+        "#FFFFFF",
+        "#000000",
+        "#6B6B6B",
+        "#FDE047",
+        "#F0F0F0",
+        "#FFF",
+        "#FAFAFA",
+        "#000"
+      ],
+      "designMdPath": "/Users/lianglei/Projects/code/design-gallery/systems/swiss-research-system/DESIGN.md",
+      "previewHtmlPath": "systems/swiss-research-system/preview.html",
+      "createdAt": "2026-08-11"
+    },
+    {
+      "id": "cyberpunk-neon",
+      "name": "Cyberpunk Neon",
+      "slug": "cyberpunk-neon",
+      "description": "Dark background with glowing neon accents, high-contrast futuristic UI components, glassmorphism, an",
+      "tags": [
+        "Dark Mode",
+        "Glassmorphism",
+        "Editorial"
+      ],
+      "palette": [
+        "#0D0D11",
+        "#16161F",
+        "#FF0055",
+        "#00F0FF",
+        "#FFE600",
+        "#F0F0F5"
+      ],
+      "designMdPath": "/Users/lianglei/Projects/code/design-gallery/systems/cyberpunk-neon/DESIGN.md",
+      "previewHtmlPath": "systems/cyberpunk-neon/preview.html",
+      "createdAt": "2026-08-11"
+    },
+    {
+      "id": "swiss-minimalism",
+      "name": "Swiss Minimalism",
+      "slug": "swiss-minimalism",
+      "description": "Swiss Minimalism emphasizes clarity, order, and precise typography. Neutral base with high-contrast accent colors, strict grid structure, generous whi",
+      "tags": [
+        "Minimalist",
+        "Editorial",
+        "Bento"
+      ],
+      "palette": [
+        "#FFFFFF",
+        "#F4F4F6",
+        "#111111",
+        "#666666",
+        "#FF3333",
+        "#E5E5E7"
+      ],
+      "designMdPath": "/Users/lianglei/Projects/code/design-gallery/systems/swiss-minimalism/DESIGN.md",
+      "previewHtmlPath": "systems/swiss-minimalism/preview.html",
+      "createdAt": "2026-08-11"
+    }
+  ]
+}
