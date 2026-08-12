@@ -1,6 +1,6 @@
 (function() {
   const INITIAL_DATA = {
-  "updatedAt": "2026-08-11T22:50:30.550Z",
+  "updatedAt": "2026-08-12T06:09:15.803Z",
   "systems": [
     {
       "id": "elle-recap-system",
@@ -11,9 +11,7 @@
         "type": "editorial-stage",
         "name": "Editorial & Stage Spec",
         "label": "电子杂志 & 舞台构图",
-        "warning": "⚠️ 构图提示: 此系统包含强烈的杂志构图语法与舞台版式范式（如大号衬线标题 Color.、不对称分栏、图注井）。请在 Slide/封面/汇报中保留其优雅排版与红线点睛，切勿降级为三等分通用 SaaS 卡片！",
-        "suitableFor": "PPT/Slide, 杂志封面, 汇报大图, 品牌月报",
-        "unsuitableFor": "长篇产品说明书, 密集后台数据列表"
+        "directive": "Preserve Editorial Layout Grammar (asymmetric columns, large serif typography, red line accents). Do not degrade into generic SaaS cards."
       },
       "tags": [
         "Glassmorphism",
@@ -32,7 +30,7 @@
       ],
       "designMdPath": "/Users/lianglei/Projects/code/design-gallery/systems/elle-recap-system/DESIGN.md",
       "previewHtmlPath": "systems/elle-recap-system/preview.html",
-      "createdAt": "2026-08-11"
+      "createdAt": "2026-08-12"
     },
     {
       "id": "editorial-style",
@@ -75,9 +73,7 @@
         "type": "product-dashboard",
         "name": "Product & Dashboard Spec",
         "label": "产品 & 精密数据工作台",
-        "warning": "💡 构图提示: 适用于高信息密度的 SaaS 工作台与数据分析仪表盘。注重 1px 网格、侧边栏上下文与清晰的数据面板。",
-        "suitableFor": "SaaS 后台, 数据仪表盘, 知识库系统",
-        "unsuitableFor": "大图沉浸式杂志封面"
+        "directive": "Enforce 1px grid borders, context sidebars, clear visual data cards, and table hierarchy for data analytics UI."
       },
       "tags": [
         "Bento"
@@ -94,7 +90,7 @@
       ],
       "designMdPath": "/Users/lianglei/Projects/code/design-gallery/systems/product-analytics-dashboard/DESIGN.md",
       "previewHtmlPath": "systems/product-analytics-dashboard/preview.html",
-      "createdAt": "2026-08-11"
+      "createdAt": "2026-08-12"
     },
     {
       "id": "pop-art-style",
@@ -288,9 +284,7 @@
         "type": "editorial-stage",
         "name": "Editorial & Stage Spec",
         "label": "电子杂志 & 舞台构图",
-        "warning": "⚠️ 构图提示: 此系统包含强烈的杂志构图语法与舞台版式范式（如不对称分栏、大字号/页码、图注井）。请在 Slide/封面/汇报中保留其戏剧情感，切勿降级为三等分通用 SaaS 卡片！",
-        "suitableFor": "PPT/Slide, 杂志封面, 汇报大图, 特色页面",
-        "unsuitableFor": "长篇产品说明书, 密集后台数据列表"
+        "directive": "Preserve Editorial Layout Grammar (asymmetric columns, large serif typography, red line accents). Do not degrade into generic SaaS cards."
       },
       "tags": [
         "Minimalist",
@@ -310,7 +304,7 @@
       ],
       "designMdPath": "/Users/lianglei/Projects/code/design-gallery/systems/marc-jacobs-report/DESIGN.md",
       "previewHtmlPath": "systems/marc-jacobs-report/preview.html",
-      "createdAt": "2026-08-11"
+      "createdAt": "2026-08-12"
     },
     {
       "id": "lovable-system",
@@ -321,9 +315,7 @@
         "type": "editorial-stage",
         "name": "Editorial & Stage Spec",
         "label": "电子杂志 & 舞台构图",
-        "warning": "⚠️ 构图提示: 此系统包含强烈的杂志构图语法与舞台版式范式（如不对称分栏、大字号/页码、图注井）。请在 Slide/封面/汇报中保留其戏剧情感，切勿降级为三等分通用 SaaS 卡片！",
-        "suitableFor": "PPT/Slide, 杂志封面, 汇报大图, 特色页面",
-        "unsuitableFor": "长篇产品说明书, 密集后台数据列表"
+        "directive": "Preserve Editorial Layout Grammar (asymmetric columns, large serif typography, red line accents). Do not degrade into generic SaaS cards."
       },
       "tags": [
         "Minimalist",
@@ -343,7 +335,7 @@
       ],
       "designMdPath": "/Users/lianglei/Projects/code/design-gallery/systems/lovable-system/DESIGN.md",
       "previewHtmlPath": "systems/lovable-system/preview.html",
-      "createdAt": "2026-08-11"
+      "createdAt": "2026-08-12"
     },
     {
       "id": "fashion-monitor",
@@ -354,9 +346,7 @@
         "type": "editorial-stage",
         "name": "Editorial & Stage Spec",
         "label": "电子杂志 & 舞台构图",
-        "warning": "⚠️ 构图提示: 此系统包含强烈的杂志构图语法与舞台版式范式（如不对称分栏、大字号/页码、图注井）。请在 Slide/封面/汇报中保留其戏剧情感，切勿降级为三等分通用 SaaS 卡片！",
-        "suitableFor": "PPT/Slide, 杂志封面, 汇报大图, 特色页面",
-        "unsuitableFor": "长篇产品说明书, 密集后台数据列表"
+        "directive": "Preserve Editorial Layout Grammar (asymmetric columns, large serif typography, red line accents). Do not degrade into generic SaaS cards."
       },
       "tags": [
         "Dark Mode",
@@ -376,7 +366,7 @@
       ],
       "designMdPath": "/Users/lianglei/Projects/code/design-gallery/systems/fashion-monitor/DESIGN.md",
       "previewHtmlPath": "systems/fashion-monitor/preview.html",
-      "createdAt": "2026-08-11"
+      "createdAt": "2026-08-12"
     },
     {
       "id": "swiss-research-system",
@@ -387,9 +377,7 @@
         "type": "product-dashboard",
         "name": "Product & Dashboard Spec",
         "label": "产品 & 精密数据工作台",
-        "warning": "💡 构图提示: 适用于高信息密度的 SaaS 工作台与数据分析仪表盘。注重 1px 网格、侧边栏上下文与清晰的数据面板。",
-        "suitableFor": "SaaS 后台, 数据仪表盘, 知识库系统",
-        "unsuitableFor": "大图沉浸式杂志封面"
+        "directive": "Enforce 1px grid borders, context sidebars, clear visual data cards, and table hierarchy for data analytics UI."
       },
       "tags": [
         "Minimalist",
@@ -409,7 +397,7 @@
       ],
       "designMdPath": "/Users/lianglei/Projects/code/design-gallery/systems/swiss-research-system/DESIGN.md",
       "previewHtmlPath": "systems/swiss-research-system/preview.html",
-      "createdAt": "2026-08-11"
+      "createdAt": "2026-08-12"
     },
     {
       "id": "cyberpunk-neon",
@@ -442,9 +430,7 @@
         "type": "universal-system",
         "name": "Universal Design System",
         "label": "通用 UI 视觉规范",
-        "warning": "💡 构图提示: 通用 UI 设计规范。严格遵循其 Color Tokens、字号阶梯、边框质感与 Hover 状态。",
-        "suitableFor": "通用 Web 应用, 落地页, 移动端 UI",
-        "unsuitableFor": "无限制"
+        "directive": "Strictly follow its color tokens, typography scale, border crispness, and interaction states."
       },
       "tags": [
         "Minimalist",
@@ -461,7 +447,7 @@
       ],
       "designMdPath": "/Users/lianglei/Projects/code/design-gallery/systems/swiss-minimalism/DESIGN.md",
       "previewHtmlPath": "systems/swiss-minimalism/preview.html",
-      "createdAt": "2026-08-11"
+      "createdAt": "2026-08-12"
     }
   ]
 };
@@ -791,14 +777,14 @@
     if (!item) return;
 
     let promptText = `Please reference and strictly implement the design system defined at: ${item.designMdPath}`;
-    if (item.genre && item.genre.warning) {
-      promptText += `\n\n[Layout & Framing Guidance]:\n${item.genre.warning}\n推荐适用场景: ${item.genre.suitableFor}`;
+    if (item.genre && item.genre.directive) {
+      promptText += `\n[Directive]: ${item.genre.directive}`;
     }
 
     navigator.clipboard.writeText(promptText).then(() => {
-      showToast("已复制 Agent 引用指令与范式避坑说明！");
+      showToast("已复制纯净 Agent 指令！");
     }).catch(() => {
-      prompt("请手动复制引用指令与范式：", promptText);
+      prompt("请手动复制 Agent 指令：", promptText);
     });
   };
 

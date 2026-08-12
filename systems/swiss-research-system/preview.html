@@ -7,11 +7,11 @@
   <style>
     :root {
       --bg: #FFFFFF;
-      --surface: #FDE047;
+      --surface: #F0F0F0;
       --text: #111111;
       --muted: #666666;
-      --accent: #6B6B6B;
-      --accent-text: #FFFFFF;
+      --accent: #FDE047;
+      --accent-text: #000000;
       --line: #000000;
       --line-subtle: #E5E5E5;
       --card-bg: #FFFFFF;
@@ -257,26 +257,24 @@
     <div class="genre-banner">
       <span class="genre-tag-badge">产品 &amp; 精密数据工作台</span>
       <div class="genre-info-body">
-        <strong>Product &amp; Dashboard Spec — 适用场景与构图指导</strong>
-        💡 构图提示: 适用于高信息密度的 SaaS 工作台与数据分析仪表盘。注重 1px 网格、侧边栏上下文与清晰的数据面板。<br>
-        <span style="font-size:11px; opacity:0.8; margin-top:4px; display:block;">
-          推荐场景: <code>SaaS 后台, 数据仪表盘, 知识库系统</code>
-        </span>
+        <strong>Product &amp; Dashboard Spec — Layout Directive</strong>
+        <code>Enforce 1px grid borders, context sidebars, clear visual data cards, and table hierarchy for data analytics UI.</code>
       </div>
     </div>
 
     <!-- Agent Quick Command Bar -->
     <div class="agent-prompt-bar">
       <div class="agent-prompt-text">
-        Please reference the design system at: /Users/lianglei/Projects/code/design-gallery/systems/swiss-research-system/DESIGN.md (💡 构图提示: 适用于高信息密度的 SaaS 工作台与数据分析仪表盘。注重 1px 网格、侧边栏上下文与清晰的数据面板。)
+        Please reference and strictly implement the design system defined at: /Users/lianglei/Projects/code/design-gallery/systems/swiss-research-system/DESIGN.md
+[Directive]: Enforce 1px grid borders, context sidebars, clear visual data cards, and table hierarchy for data analytics UI.
       </div>
-      <button class="btn-copy" onclick="copyPrompt()">复制 AGENT 指令与范式</button>
+      <button class="btn-copy" onclick="copyPrompt()">复制 AGENT 指令</button>
     </div>
 
     <!-- Section 1: Color Palette -->
     <div class="sec-title">01 · Palette Swatches & Roles</div>
     <div class="swatch-grid">
-      <div class="swatch-card" style="border: 1px solid #000000; background: #FDE047;">
+      <div class="swatch-card" style="border: 1px solid #000000; background: #F0F0F0;">
         <div class="swatch-color" style="background:#FFFFFF; display:flex; align-items:flex-end; padding:8px;">
           <span style="font-family:var(--font-mono); font-size:10px; font-weight:700; color:#000000; background:rgba(0,0,0,0.25); padding:2px 4px; border-radius:2px;">#01</span>
         </div>
@@ -286,7 +284,7 @@
         </div>
       </div>
     
-      <div class="swatch-card" style="border: 1px solid #000000; background: #FDE047;">
+      <div class="swatch-card" style="border: 1px solid #000000; background: #F0F0F0;">
         <div class="swatch-color" style="background:#000000; display:flex; align-items:flex-end; padding:8px;">
           <span style="font-family:var(--font-mono); font-size:10px; font-weight:700; color:#FFFFFF; background:rgba(0,0,0,0.25); padding:2px 4px; border-radius:2px;">#02</span>
         </div>
@@ -296,7 +294,7 @@
         </div>
       </div>
     
-      <div class="swatch-card" style="border: 1px solid #000000; background: #FDE047;">
+      <div class="swatch-card" style="border: 1px solid #000000; background: #F0F0F0;">
         <div class="swatch-color" style="background:#6B6B6B; display:flex; align-items:flex-end; padding:8px;">
           <span style="font-family:var(--font-mono); font-size:10px; font-weight:700; color:#FFFFFF; background:rgba(0,0,0,0.25); padding:2px 4px; border-radius:2px;">#03</span>
         </div>
@@ -306,7 +304,7 @@
         </div>
       </div>
     
-      <div class="swatch-card" style="border: 1px solid #000000; background: #FDE047;">
+      <div class="swatch-card" style="border: 1px solid #000000; background: #F0F0F0;">
         <div class="swatch-color" style="background:#FDE047; display:flex; align-items:flex-end; padding:8px;">
           <span style="font-family:var(--font-mono); font-size:10px; font-weight:700; color:#000000; background:rgba(0,0,0,0.25); padding:2px 4px; border-radius:2px;">#04</span>
         </div>
@@ -316,7 +314,7 @@
         </div>
       </div>
     
-      <div class="swatch-card" style="border: 1px solid #000000; background: #FDE047;">
+      <div class="swatch-card" style="border: 1px solid #000000; background: #F0F0F0;">
         <div class="swatch-color" style="background:#F0F0F0; display:flex; align-items:flex-end; padding:8px;">
           <span style="font-family:var(--font-mono); font-size:10px; font-weight:700; color:#000000; background:rgba(0,0,0,0.25); padding:2px 4px; border-radius:2px;">#05</span>
         </div>
@@ -326,7 +324,7 @@
         </div>
       </div>
     
-      <div class="swatch-card" style="border: 1px solid #000000; background: #FDE047;">
+      <div class="swatch-card" style="border: 1px solid #000000; background: #F0F0F0;">
         <div class="swatch-color" style="background:#FFF; display:flex; align-items:flex-end; padding:8px;">
           <span style="font-family:var(--font-mono); font-size:10px; font-weight:700; color:#000000; background:rgba(0,0,0,0.25); padding:2px 4px; border-radius:2px;">#06</span>
         </div>
@@ -336,7 +334,7 @@
         </div>
       </div>
     
-      <div class="swatch-card" style="border: 1px solid #000000; background: #FDE047;">
+      <div class="swatch-card" style="border: 1px solid #000000; background: #F0F0F0;">
         <div class="swatch-color" style="background:#FAFAFA; display:flex; align-items:flex-end; padding:8px;">
           <span style="font-family:var(--font-mono); font-size:10px; font-weight:700; color:#000000; background:rgba(0,0,0,0.25); padding:2px 4px; border-radius:2px;">#07</span>
         </div>
@@ -346,7 +344,7 @@
         </div>
       </div>
     
-      <div class="swatch-card" style="border: 1px solid #000000; background: #FDE047;">
+      <div class="swatch-card" style="border: 1px solid #000000; background: #F0F0F0;">
         <div class="swatch-color" style="background:#000; display:flex; align-items:flex-end; padding:8px;">
           <span style="font-family:var(--font-mono); font-size:10px; font-weight:700; color:#FFFFFF; background:rgba(0,0,0,0.25); padding:2px 4px; border-radius:2px;">#08</span>
         </div>
@@ -415,8 +413,8 @@
         <pre style="background:var(--bg); color:var(--text); border:1px solid var(--line); padding:14px; font-family:var(--font-mono); font-size:12px; overflow-x:auto;">
 :root {
   --bg: #FFFFFF;
-  --surface: #FDE047;
-  --accent: #6B6B6B;
+  --surface: #F0F0F0;
+  --accent: #FDE047;
 }</pre>
       </div>
     </div>
@@ -442,13 +440,13 @@
           </tr>
           <tr>
             <td><strong>Surface Secondary</strong></td>
-            <td><code>#FDE047</code></td>
+            <td><code>#F0F0F0</code></td>
             <td>Card panels, sidebars & elevated rows</td>
             <td><code>Active</code></td>
           </tr>
           <tr>
             <td><strong>Accent Highlight</strong></td>
-            <td><code>#6B6B6B</code></td>
+            <td><code>#FDE047</code></td>
             <td>Key metrics, active badges & hover borders</td>
             <td><code>Active</code></td>
           </tr>
@@ -459,9 +457,9 @@
 
   <script>
     function copyPrompt() {
-      const text = "Please reference the design system defined at: /Users/lianglei/Projects/code/design-gallery/systems/swiss-research-system/DESIGN.md\n[Layout Guidance]: 💡 构图提示: 适用于高信息密度的 SaaS 工作台与数据分析仪表盘。注重 1px 网格、侧边栏上下文与清晰的数据面板。";
+      const text = "Please reference and strictly implement the design system defined at: /Users/lianglei/Projects/code/design-gallery/systems/swiss-research-system/DESIGN.md\n[Directive]: Enforce 1px grid borders, context sidebars, clear visual data cards, and table hierarchy for data analytics UI.";
       navigator.clipboard.writeText(text).then(() => {
-        alert("已复制 Agent 引用指令与范式避坑说明！");
+        alert("已复制 Agent 引用指令！");
       }).catch(() => {
         prompt("手动复制 Agent 引用指令：", text);
       });

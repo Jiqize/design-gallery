@@ -10,8 +10,8 @@
       --surface: #F8F7F4;
       --text: #111111;
       --muted: #666666;
-      --accent: #747770;
-      --accent-text: #FFFFFF;
+      --accent: #F07B2D;
+      --accent-text: #000000;
       --line: #000000;
       --line-subtle: #E5E5E5;
       --card-bg: #FFFFFF;
@@ -257,20 +257,18 @@
     <div class="genre-banner">
       <span class="genre-tag-badge">产品 &amp; 精密数据工作台</span>
       <div class="genre-info-body">
-        <strong>Product &amp; Dashboard Spec — 适用场景与构图指导</strong>
-        💡 构图提示: 适用于高信息密度的 SaaS 工作台与数据分析仪表盘。注重 1px 网格、侧边栏上下文与清晰的数据面板。<br>
-        <span style="font-size:11px; opacity:0.8; margin-top:4px; display:block;">
-          推荐场景: <code>SaaS 后台, 数据仪表盘, 知识库系统</code>
-        </span>
+        <strong>Product &amp; Dashboard Spec — Layout Directive</strong>
+        <code>Enforce 1px grid borders, context sidebars, clear visual data cards, and table hierarchy for data analytics UI.</code>
       </div>
     </div>
 
     <!-- Agent Quick Command Bar -->
     <div class="agent-prompt-bar">
       <div class="agent-prompt-text">
-        Please reference the design system at: /Users/lianglei/Projects/code/design-gallery/systems/product-analytics-dashboard/DESIGN.md (💡 构图提示: 适用于高信息密度的 SaaS 工作台与数据分析仪表盘。注重 1px 网格、侧边栏上下文与清晰的数据面板。)
+        Please reference and strictly implement the design system defined at: /Users/lianglei/Projects/code/design-gallery/systems/product-analytics-dashboard/DESIGN.md
+[Directive]: Enforce 1px grid borders, context sidebars, clear visual data cards, and table hierarchy for data analytics UI.
       </div>
-      <button class="btn-copy" onclick="copyPrompt()">复制 AGENT 指令与范式</button>
+      <button class="btn-copy" onclick="copyPrompt()">复制 AGENT 指令</button>
     </div>
 
     <!-- Section 1: Color Palette -->
@@ -416,7 +414,7 @@
 :root {
   --bg: #EEEDE9;
   --surface: #F8F7F4;
-  --accent: #747770;
+  --accent: #F07B2D;
 }</pre>
       </div>
     </div>
@@ -448,7 +446,7 @@
           </tr>
           <tr>
             <td><strong>Accent Highlight</strong></td>
-            <td><code>#747770</code></td>
+            <td><code>#F07B2D</code></td>
             <td>Key metrics, active badges & hover borders</td>
             <td><code>Active</code></td>
           </tr>
@@ -459,9 +457,9 @@
 
   <script>
     function copyPrompt() {
-      const text = "Please reference the design system defined at: /Users/lianglei/Projects/code/design-gallery/systems/product-analytics-dashboard/DESIGN.md\n[Layout Guidance]: 💡 构图提示: 适用于高信息密度的 SaaS 工作台与数据分析仪表盘。注重 1px 网格、侧边栏上下文与清晰的数据面板。";
+      const text = "Please reference and strictly implement the design system defined at: /Users/lianglei/Projects/code/design-gallery/systems/product-analytics-dashboard/DESIGN.md\n[Directive]: Enforce 1px grid borders, context sidebars, clear visual data cards, and table hierarchy for data analytics UI.";
       navigator.clipboard.writeText(text).then(() => {
-        alert("已复制 Agent 引用指令与范式避坑说明！");
+        alert("已复制 Agent 引用指令！");
       }).catch(() => {
         prompt("手动复制 Agent 引用指令：", text);
       });

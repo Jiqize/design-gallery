@@ -257,21 +257,18 @@
     <div class="genre-banner">
       <span class="genre-tag-badge">电子杂志 &amp; 舞台构图</span>
       <div class="genre-info-body">
-        <strong>Editorial &amp; Stage Spec — 适用场景与构图指导</strong>
-        ⚠️ 构图提示: 此系统包含强烈的杂志构图语法与舞台版式范式（如大号衬线标题 Color.、不对称分栏、图注井）。请在 Slide/封面/汇报中保留其优雅排版与红线点睛，切勿降级为三等分通用 SaaS 卡片！<br>
-        <span style="font-size:11px; opacity:0.8; margin-top:4px; display:block;">
-          推荐场景: <code>PPT/Slide, 杂志封面, 汇报大图, 品牌月报</code>
-        </span>
+        <strong>Editorial &amp; Stage Spec — Layout Directive</strong>
+        <code>Preserve Editorial Layout Grammar (asymmetric columns, large serif typography, red line accents). Do not degrade into generic SaaS cards.</code>
       </div>
     </div>
 
     <!-- Agent Quick Command Bar -->
     <div class="agent-prompt-bar">
       <div class="agent-prompt-text">
-        Please reference the design system defined at: /Users/lianglei/Projects/code/design-gallery/systems/elle-recap-system/DESIGN.md
-[Layout Guidance]: ⚠️ 构图提示: 此系统包含强烈的杂志构图语法与舞台版式范式（如大号衬线标题 Color.、不对称分栏、图注井）。请在 Slide/封面/汇报中保留其优雅排版与红线点睛，切勿降级为三等分通用 SaaS 卡片！
+        Please reference and strictly implement the design system defined at: /Users/lianglei/Projects/code/design-gallery/systems/elle-recap-system/DESIGN.md
+[Directive]: Preserve Editorial Layout Grammar (asymmetric columns, large serif typography, red line accents). Do not degrade into generic SaaS cards.
       </div>
-      <button class="btn-copy" onclick="copyPrompt()">复制 AGENT 指令与范式</button>
+      <button class="btn-copy" onclick="copyPrompt()">复制 AGENT 指令</button>
     </div>
 
     <!-- Section 1: Color Palette -->
@@ -460,9 +457,9 @@
 
   <script>
     function copyPrompt() {
-      const text = "Please reference the design system defined at: /Users/lianglei/Projects/code/design-gallery/systems/elle-recap-system/DESIGN.md\n[Layout Guidance]: ⚠️ 构图提示: 此系统包含强烈的杂志构图语法与舞台版式范式（如大号衬线标题 Color.、不对称分栏、图注井）。请在 Slide/封面/汇报中保留其优雅排版与红线点睛，切勿降级为三等分通用 SaaS 卡片！";
+      const text = "Please reference and strictly implement the design system defined at: /Users/lianglei/Projects/code/design-gallery/systems/elle-recap-system/DESIGN.md\n[Directive]: Preserve Editorial Layout Grammar (asymmetric columns, large serif typography, red line accents). Do not degrade into generic SaaS cards.";
       navigator.clipboard.writeText(text).then(() => {
-        alert("已复制 Agent 引用指令与范式避坑说明！");
+        alert("已复制 Agent 引用指令！");
       }).catch(() => {
         prompt("手动复制 Agent 引用指令：", text);
       });
